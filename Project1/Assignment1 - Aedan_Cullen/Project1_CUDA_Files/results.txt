@@ -1,0 +1,118 @@
+ARRAYSIZE = 10
+Performance in Mops/s: 1.6192
+Time: 0.0062
+Size: 10
+Threads: 10
+Blocks: 1
+Total Threads: 10
+
+Save a screneshot of the result window and upload with your solution to Canvas.
+
+ARRAYSIZE = 100
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 200
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 500
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 750
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 1000
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 1250
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+What happens at arraySize = 1250 with the original threads and blocks value? Explain.
+- At arraySize = 1250, the maximum number of threads per block has been exceeded if the number of blocks is still set to 1024. The number of blocks must be increased at this point.
+
+ARRAYSIZE = 1500
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 2000
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 5000
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 10000
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+ARRAYSIZE = 25000
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+Also save a screenshot of the Debug results for arraySize = 25000.
+
+ARRAYSIZE = 64000
+Performance in Mops/s:
+Time:
+Size:
+Threads:
+Blocks:
+Total Threads:
+
+With the minimum threads and blocks sizes appropriate for arraySize = 25000, increase the arraySize to 64000.
+What are the values of the final two values of c? Explain.
+- When the arraySize is increased to 64000 but the number of blocks is not increased, the values of the sum at the end of the array are zero. This is because not enough threads are being used to cover all the indices in the array (only 25600 total, rather thna 64000). The indexing on line 24 makes this clear.
+How would you fix this problem and add your (correct) data to the table.
+- To fix this problem, the number of blocks must be increased to 63. (I am assuming that the number of threads per block has been kept at the maximum of 1024.)
+
+From the data in your table of the various experiments from arraySize of 10 to 64000, what is the percent increase in performance, time, and size? Explain the causes and trends.
