@@ -1,2 +1,2 @@
 # Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments
-Rice 2022 Fall ELEC 522 - ADVANCED VLSI DESIGN course assignments
+Rice University, Fall 2022 ELEC 522 - ADVANCED VLSI DESIGN Course Assignments
