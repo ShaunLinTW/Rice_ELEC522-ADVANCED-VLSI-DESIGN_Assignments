@@ -1,0 +1,40 @@
+>> test1
+Done setting matrix inputs; run Simulink now and then press Enter
+Model Composer results (simulation)
+         405         107         581         173        5175         146         239         772
+        6687        4471       12532         701        3987         536         134         751
+        1439        1217        2362         311        5562         310         261         898
+       10891        8919       11545         837         207         109          85          79
+
+Model Composer results (hardware co-sim)
+         405         107         581         173        5175         146         239         772
+        6687        4471       12532         701        3987         536         134         751
+        1439        1217        2362         311        5562         310         261         898
+       10891        8919       11545         837         207         109          85          79
+
+MATLAB software results:
+         405         107         581         173        5175         146         239         772
+        6687        4471       12532         701        3987         536         134         751
+        1439        1217        2362         311        5562         310         261         898
+       10891        8919       11545         837         207         109          85          79
+
+Done setting vector inputs; run Simulink now and then press Enter
+Model Composer results (simulation)
+         442        4359
+        2629        4917
+        1149        5125
+        7150         122
+
+Model Composer results (hardware co-sim)
+         442        4359
+        2629        4917
+        1149        5125
+        7150         122
+
+MATLAB software results:
+         442        4359
+        2629        4917
+        1149        5125
+        7150         122
+
+>> 
