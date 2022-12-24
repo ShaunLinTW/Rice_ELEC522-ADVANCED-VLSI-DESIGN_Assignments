@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../src/tb_cordic.cpp in debug mode
+   Compiling ../../../src/cordic.cpp in debug mode
+   Generating csim.exe
+result sin = 0.498718, cos = 0.867004
+result theta = 60.513073
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

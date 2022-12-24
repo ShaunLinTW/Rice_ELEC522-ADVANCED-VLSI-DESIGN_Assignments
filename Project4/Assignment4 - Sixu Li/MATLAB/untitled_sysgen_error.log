@@ -1,0 +1,22 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Input port 's_axis_phase_tdata_phase' is expected to be F...
+     Block: 'untitled/CORDIC 6.0'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/CORDIC 6.0'
+
+Details:
+Input port 's_axis_phase_tdata_phase' is expected to be Fix_16_13,
+but is Fix_16_14
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: The design cannot contain a hardware co-simulation block ...
+     Block: 'HLS/untitled hwcosim'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'HLS/untitled hwcosim'
+
+Details:
+The design cannot contain a hardware co-simulation block for
+generation.  Please remove the block before trying to generate again.
+Error occurred during "HDL Netlist Generation".
+
+--------------------------------------------------------------------------------
