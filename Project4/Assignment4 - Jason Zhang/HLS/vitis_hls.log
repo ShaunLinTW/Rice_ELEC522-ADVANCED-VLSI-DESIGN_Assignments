@@ -1,0 +1,18 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'jz118' on host 'ryn-b10-pc-14' (Windows NT_amd64 version 6.2) on Sat Nov 19 23:14:24 -0600 2022
+INFO: [HLS 200-10] In directory 'C:/ELEC522/jz118/Assignment4&5/HLS'
+Sourcing Tcl script 'C:/ELEC522/jz118/Assignment4'
+INFO: [HLS 200-1510] Running: source C:/ELEC522/jz118/Assignment4
+C:/ELEC522/jz118/Assignment4 can't be opened.
+couldn't read file "C:/ELEC522/jz118/Assignment4": no such file or directory
+    while executing
+"source C:/ELEC522/jz118/Assignment4"
+    invoked from within
+"hls::main C:/ELEC522/jz118/Assignment4"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.284 seconds; peak allocated memory: 1.137 MB.
