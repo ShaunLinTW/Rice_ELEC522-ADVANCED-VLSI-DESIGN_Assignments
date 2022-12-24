@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 11 22:10:50 2022
+# Process ID: 21776
+# Current directory: C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/impl/ip/vivado.log
+# Journal file: C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/impl/ip\vivado.jou
+# Running On: RYN-B10-PC-09, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68426 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 11 22:10:56 2022...

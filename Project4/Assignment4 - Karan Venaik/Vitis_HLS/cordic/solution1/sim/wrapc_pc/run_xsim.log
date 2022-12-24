@@ -1,0 +1,105 @@
+degree=0, radian=0.000000, cos=0.998169, sin=0.000366, arctan=0.000000
+degree=15, radian=0.261719, cos=0.964111, sin=0.258667, arctan=0.261719
+degree=30, radian=0.523560, cos=0.864258, sin=0.499023, arctan=0.523438
+degree=45, radian=0.785278, cos=0.705688, sin=0.705688, arctan=0.785156
+degree=60, radian=1.047119, cos=0.499023, sin=0.864258, arctan=1.047119
+degree=75, radian=1.308960, cos=0.258667, sin=0.964111, arctan=1.308838
+degree=90, radian=1.570679, cos=-0.000854, sin=0.997437, arctan=1.570557
+
+
+
+xValue=1.000000, yValue=1.000000, radian=1.570679, cos=1.411865, sin=0.000000, arctan=0.785156
+xValue=2.000000, yValue=1.000000, radian=1.570679, cos=2.231812, sin=0.000000, arctan=0.463379
+xValue=3.000000, yValue=1.000000, radian=1.570679, cos=-0.696899, sin=2.231445, arctan=0.324707
+xValue=1.000000, yValue=2.000000, radian=1.570679, cos=2.231934, sin=0.000000, arctan=1.107178
+xValue=2.000000, yValue=2.000000, radian=1.570679, cos=-1.624756, sin=2.309692, arctan=1.741699
+xValue=3.000000, yValue=2.000000, radian=1.570679, cos=-0.640503, sin=-2.139038, arctan=-0.171143
+xValue=1.000000, yValue=3.000000, radian=1.570679, cos=-0.696899, sin=2.231445, arctan=1.251953
+xValue=2.000000, yValue=3.000000, radian=1.570679, cos=-0.641602, sin=2.138672, arctan=1.741699
+xValue=3.000000, yValue=3.000000, radian=1.570679, cos=-0.812744, sin=1.155151, arctan=1.741699
+
+C:\ELEC522\venaik\Project4\Vitis_HLS\cordic\solution1\sim\verilog>set PATH= 
+
+C:\ELEC522\venaik\Project4\Vitis_HLS\cordic\solution1\sim\verilog>call C:/Xilinx/Vivado/2022.1/bin/xelab xil_defaultlib.apatb_cordic_top glbl -Oenable_linking_all_libraries  -prj cordic.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib "ieee_proposed=./ieee_proposed" -s cordic  
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_cordic_top glbl -Oenable_linking_all_libraries -prj cordic.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s cordic 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/sim/verilog/cordic.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_cordic_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/sim/verilog/cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.cordic
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_cordic_top
+Compiling module work.glbl
+Built simulation snapshot cordic
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/cordic/xsim_script.tcl
+# xsim {cordic} -autoloadwcfg -tclbatch {cordic.tcl}
+Time resolution is 1 ps
+source cordic.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [0.00%] @ "125000"
+// RTL Simulation : 1 / 16 [92.86%] @ "285000"
+// RTL Simulation : 2 / 16 [92.86%] @ "295000"
+// RTL Simulation : 3 / 16 [92.86%] @ "305000"
+// RTL Simulation : 4 / 16 [92.86%] @ "315000"
+// RTL Simulation : 5 / 16 [92.86%] @ "325000"
+// RTL Simulation : 6 / 16 [92.86%] @ "335000"
+// RTL Simulation : 7 / 16 [92.86%] @ "345000"
+// RTL Simulation : 8 / 16 [92.86%] @ "355000"
+// RTL Simulation : 9 / 16 [92.86%] @ "365000"
+// RTL Simulation : 10 / 16 [92.86%] @ "375000"
+// RTL Simulation : 11 / 16 [92.86%] @ "385000"
+// RTL Simulation : 12 / 16 [92.86%] @ "395000"
+// RTL Simulation : 13 / 16 [92.86%] @ "405000"
+// RTL Simulation : 14 / 16 [92.86%] @ "415000"
+// RTL Simulation : 15 / 16 [92.86%] @ "425000"
+// RTL Simulation : 16 / 16 [100.00%] @ "435000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 495 ns : File "C:/ELEC522/venaik/Project4/Vitis_HLS/cordic/solution1/sim/verilog/cordic.autotb.v" Line 583
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Nov 10 22:34:48 2022...
+degree=0, radian=0.000000, cos=0.998169, sin=0.000366, arctan=0.000000
+degree=15, radian=0.261719, cos=0.964111, sin=0.258667, arctan=0.261719
+degree=30, radian=0.523560, cos=0.864258, sin=0.499023, arctan=0.523438
+degree=45, radian=0.785278, cos=0.705688, sin=0.705688, arctan=0.785156
+degree=60, radian=1.047119, cos=0.499023, sin=0.864258, arctan=1.047119
+degree=75, radian=1.308960, cos=0.258667, sin=0.964111, arctan=1.308838
+degree=90, radian=1.570679, cos=-0.000854, sin=0.997437, arctan=1.570557
+
+
+
+xValue=1.000000, yValue=1.000000, radian=1.570679, cos=1.411865, sin=0.000000, arctan=0.785156
+xValue=2.000000, yValue=1.000000, radian=1.570679, cos=2.231812, sin=0.000000, arctan=0.463379
+xValue=3.000000, yValue=1.000000, radian=1.570679, cos=-0.696899, sin=2.231445, arctan=0.324707
+xValue=1.000000, yValue=2.000000, radian=1.570679, cos=2.231934, sin=0.000000, arctan=1.107178
+xValue=2.000000, yValue=2.000000, radian=1.570679, cos=-1.624756, sin=2.309692, arctan=1.741699
+xValue=3.000000, yValue=2.000000, radian=1.570679, cos=-0.640503, sin=-2.139038, arctan=-0.171143
+xValue=1.000000, yValue=3.000000, radian=1.570679, cos=-0.696899, sin=2.231445, arctan=1.251953
+xValue=2.000000, yValue=3.000000, radian=1.570679, cos=-0.641602, sin=2.138672, arctan=1.741699
+xValue=3.000000, yValue=3.000000, radian=1.570679, cos=-0.812744, sin=1.155151, arctan=1.741699

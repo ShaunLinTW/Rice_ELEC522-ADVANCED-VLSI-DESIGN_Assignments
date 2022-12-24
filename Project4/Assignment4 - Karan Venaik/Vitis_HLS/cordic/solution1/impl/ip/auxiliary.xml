@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="cordic" xd:componentRef="cordic" xd:initiationInterval="1" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="cordicMode" xd:originalName="cordicMode" xd:direction="in" xd:interfaceRef="cordicMode" xd:busTypeRef="register" xd:dataWidth="1"/>
+  <xd:arg xd:name="targetAnglePhi" xd:originalName="targetAnglePhi" xd:direction="in" xd:interfaceRef="targetAnglePhi" xd:busTypeRef="register" xd:dataWidth="16"/>
+  <xd:arg xd:name="xCartesian" xd:originalName="xCartesian" xd:direction="in" xd:interfaceRef="xCartesian" xd:busTypeRef="register" xd:dataWidth="16"/>
+  <xd:arg xd:name="yCartesian" xd:originalName="yCartesian" xd:direction="in" xd:interfaceRef="yCartesian" xd:busTypeRef="register" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(arctan)" xd:originalName="arctan" xd:direction="out" xd:interfaceRef="arctan" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(s)" xd:originalName="s" xd:direction="out" xd:interfaceRef="s" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(c)" xd:originalName="c" xd:direction="out" xd:interfaceRef="c" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="16"/>
+  <xd:latencyEstimates xd:best-case="14" xd:worst-case="14" xd:average-case="14"/>
+  <xd:resourceEstimates xd:LUT="4893" xd:FF="1406" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../fpga_hls/cordic.cpp in debug mode
+   Generating csim.exe
+degree=0, radian=0.000000, cos=0.998169, sin=0.000366, arctan=0.000000
+degree=15, radian=0.261719, cos=0.964111, sin=0.258667, arctan=0.261719
+degree=30, radian=0.523560, cos=0.864258, sin=0.499023, arctan=0.523438
+degree=45, radian=0.785278, cos=0.705688, sin=0.705688, arctan=0.785156
+degree=60, radian=1.047119, cos=0.499023, sin=0.864258, arctan=1.047119
+degree=75, radian=1.308960, cos=0.258667, sin=0.964111, arctan=1.308838
+degree=90, radian=1.570679, cos=-0.000854, sin=0.997437, arctan=1.570557
+
+
+
+xValue=1.000000, yValue=1.000000, radian=1.570679, cos=1.411865, sin=0.000000, arctan=0.785156
+xValue=2.000000, yValue=1.000000, radian=1.570679, cos=2.231812, sin=0.000000, arctan=0.463379
+xValue=3.000000, yValue=1.000000, radian=1.570679, cos=-0.696899, sin=2.231445, arctan=0.324707
+xValue=1.000000, yValue=2.000000, radian=1.570679, cos=2.231934, sin=0.000000, arctan=1.107178
+xValue=2.000000, yValue=2.000000, radian=1.570679, cos=-1.624756, sin=2.309692, arctan=1.741699
+xValue=3.000000, yValue=2.000000, radian=1.570679, cos=-0.640503, sin=-2.139038, arctan=-0.171143
+xValue=1.000000, yValue=3.000000, radian=1.570679, cos=-0.696899, sin=2.231445, arctan=1.251953
+xValue=2.000000, yValue=3.000000, radian=1.570679, cos=-0.641602, sin=2.138672, arctan=1.741699
+xValue=3.000000, yValue=3.000000, radian=1.570679, cos=-0.812744, sin=1.155151, arctan=1.741699
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

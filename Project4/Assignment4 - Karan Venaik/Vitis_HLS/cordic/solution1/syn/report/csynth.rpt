@@ -1,0 +1,255 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cordic'
+================================================================
++ General Information: 
+    * Date:           Fri Nov 11 22:10:42 2022
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        cordic
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |  Modules | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |           |     |
+    |  & Loops | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ cordic  |     -|  0.27|       14|  140.000|         -|        1|     -|       yes|     -|   -|  1406 (1%)|  4893 (9%)|    -|
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++----------------+---------+----------+
+| Interface      | Mode    | Bitwidth |
++----------------+---------+----------+
+| arctan         | ap_none | 16       |
+| c              | ap_none | 16       |
+| cordicMode     | ap_none | 1        |
+| s              | ap_none | 16       |
+| targetAnglePhi | ap_none | 16       |
+| xCartesian     | ap_none | 16       |
+| yCartesian     | ap_none | 16       |
++----------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+--------------------------------------+
+| Argument       | Direction | Datatype                             |
++----------------+-----------+--------------------------------------+
+| cordicMode     | in        | bool                                 |
+| targetAnglePhi | in        | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>  |
+| xCartesian     | in        | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>  |
+| yCartesian     | in        | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>  |
+| arctan         | out       | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>& |
+| s              | out       | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>& |
+| c              | out       | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>& |
++----------------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------------+----------------+---------+
+| Argument       | HW Interface   | HW Type |
++----------------+----------------+---------+
+| cordicMode     | cordicMode     | port    |
+| targetAnglePhi | targetAnglePhi | port    |
+| xCartesian     | xCartesian     | port    |
+| yCartesian     | yCartesian     | port    |
+| arctan         | arctan         | port    |
+| arctan         | arctan_ap_vld  | port    |
+| s              | s              | port    |
+| s              | s_ap_vld       | port    |
+| c              | c              | port    |
+| c              | c_ap_vld       | port    |
++----------------+----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------+-----+--------+---------------------------+-----+--------+---------+
+| Name                                   | DSP | Pragma | Variable                  | Op  | Impl   | Latency |
++----------------------------------------+-----+--------+---------------------------+-----+--------+---------+
+| + cordic                               | 0   |        |                           |     |        |         |
+|   minimizationFunction_V_fu_205_p2     | -   |        | minimizationFunction_V    | sub | fabric | 0       |
+|   yCartesian_V_67_fu_235_p2            | -   |        | yCartesian_V_67           | add | fabric | 0       |
+|   xCartesian_V_fu_241_p2               | -   |        | xCartesian_V              | sub | fabric | 0       |
+|   minimizationFunction_V_1_fu_247_p2   | -   |        | minimizationFunction_V_1  | sub | fabric | 0       |
+|   yCartesian_V_fu_261_p2               | -   |        | yCartesian_V              | sub | fabric | 0       |
+|   minimizationFunction_V_2_fu_267_p2   | -   |        | minimizationFunction_V_2  | sub | fabric | 0       |
+|   xCartesian_V_3_fu_389_p2             | -   |        | xCartesian_V_3            | sub | fabric | 0       |
+|   yCartesian_V_68_fu_480_p2            | -   |        | yCartesian_V_68           | add | fabric | 0       |
+|   xCartesian_V_4_fu_395_p2             | -   |        | xCartesian_V_4            | add | fabric | 0       |
+|   yCartesian_V_69_fu_485_p2            | -   |        | yCartesian_V_69           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_1_fu_401_p2   | -   |        | cumulativeAngleTheta_V_1  | add | fabric | 0       |
+|   cumulativeAngleTheta_V_2_fu_407_p2   | -   |        | cumulativeAngleTheta_V_2  | add | fabric | 0       |
+|   minimizationFunction_V_4_fu_496_p2   | -   |        | minimizationFunction_V_4  | sub | fabric | 0       |
+|   minimizationFunction_V_6_fu_501_p2   | -   |        | minimizationFunction_V_6  | sub | fabric | 0       |
+|   xCartesian_V_6_fu_588_p2             | -   |        | xCartesian_V_6            | sub | fabric | 0       |
+|   yCartesian_V_70_fu_593_p2            | -   |        | yCartesian_V_70           | add | fabric | 0       |
+|   xCartesian_V_7_fu_599_p2             | -   |        | xCartesian_V_7            | add | fabric | 0       |
+|   yCartesian_V_71_fu_604_p2            | -   |        | yCartesian_V_71           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_6_fu_610_p2   | -   |        | cumulativeAngleTheta_V_6  | add | fabric | 0       |
+|   cumulativeAngleTheta_V_7_fu_620_p2   | -   |        | cumulativeAngleTheta_V_7  | add | fabric | 0       |
+|   minimizationFunction_V_9_fu_630_p2   | -   |        | minimizationFunction_V_9  | sub | fabric | 0       |
+|   minimizationFunction_V_11_fu_635_p2  | -   |        | minimizationFunction_V_11 | sub | fabric | 0       |
+|   xCartesian_V_9_fu_783_p2             | -   |        | xCartesian_V_9            | sub | fabric | 0       |
+|   yCartesian_V_72_fu_788_p2            | -   |        | yCartesian_V_72           | add | fabric | 0       |
+|   xCartesian_V_10_fu_793_p2            | -   |        | xCartesian_V_10           | add | fabric | 0       |
+|   yCartesian_V_73_fu_798_p2            | -   |        | yCartesian_V_73           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_11_fu_803_p2  | -   |        | cumulativeAngleTheta_V_11 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_12_fu_812_p2  | -   |        | cumulativeAngleTheta_V_12 | add | fabric | 0       |
+|   minimizationFunction_V_14_fu_821_p2  | -   |        | minimizationFunction_V_14 | sub | fabric | 0       |
+|   minimizationFunction_V_16_fu_826_p2  | -   |        | minimizationFunction_V_16 | sub | fabric | 0       |
+|   xCartesian_V_12_fu_966_p2            | -   |        | xCartesian_V_12           | sub | fabric | 0       |
+|   yCartesian_V_74_fu_1005_p2           | -   |        | yCartesian_V_74           | add | fabric | 0       |
+|   xCartesian_V_13_fu_972_p2            | -   |        | xCartesian_V_13           | add | fabric | 0       |
+|   yCartesian_V_75_fu_1010_p2           | -   |        | yCartesian_V_75           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_16_fu_978_p2  | -   |        | cumulativeAngleTheta_V_16 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_17_fu_1018_p2 | -   |        | cumulativeAngleTheta_V_17 | add | fabric | 0       |
+|   minimizationFunction_V_19_fu_1027_p2 | -   |        | minimizationFunction_V_19 | sub | fabric | 0       |
+|   minimizationFunction_V_21_fu_1032_p2 | -   |        | minimizationFunction_V_21 | sub | fabric | 0       |
+|   xCartesian_V_15_fu_1153_p2           | -   |        | xCartesian_V_15           | sub | fabric | 0       |
+|   yCartesian_V_76_fu_1233_p2           | -   |        | yCartesian_V_76           | add | fabric | 0       |
+|   xCartesian_V_16_fu_1158_p2           | -   |        | xCartesian_V_16           | add | fabric | 0       |
+|   yCartesian_V_77_fu_1238_p2           | -   |        | yCartesian_V_77           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_21_fu_1163_p2 | -   |        | cumulativeAngleTheta_V_21 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_22_fu_1169_p2 | -   |        | cumulativeAngleTheta_V_22 | add | fabric | 0       |
+|   minimizationFunction_V_24_fu_1249_p2 | -   |        | minimizationFunction_V_24 | sub | fabric | 0       |
+|   minimizationFunction_V_26_fu_1254_p2 | -   |        | minimizationFunction_V_26 | sub | fabric | 0       |
+|   xCartesian_V_18_fu_1341_p2           | -   |        | xCartesian_V_18           | sub | fabric | 0       |
+|   yCartesian_V_78_fu_1346_p2           | -   |        | yCartesian_V_78           | add | fabric | 0       |
+|   xCartesian_V_19_fu_1352_p2           | -   |        | xCartesian_V_19           | add | fabric | 0       |
+|   yCartesian_V_79_fu_1357_p2           | -   |        | yCartesian_V_79           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_26_fu_1363_p2 | -   |        | cumulativeAngleTheta_V_26 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_27_fu_1373_p2 | -   |        | cumulativeAngleTheta_V_27 | add | fabric | 0       |
+|   minimizationFunction_V_29_fu_1383_p2 | -   |        | minimizationFunction_V_29 | sub | fabric | 0       |
+|   minimizationFunction_V_31_fu_1388_p2 | -   |        | minimizationFunction_V_31 | sub | fabric | 0       |
+|   xCartesian_V_21_fu_1536_p2           | -   |        | xCartesian_V_21           | sub | fabric | 0       |
+|   yCartesian_V_80_fu_1541_p2           | -   |        | yCartesian_V_80           | add | fabric | 0       |
+|   xCartesian_V_22_fu_1546_p2           | -   |        | xCartesian_V_22           | add | fabric | 0       |
+|   yCartesian_V_81_fu_1551_p2           | -   |        | yCartesian_V_81           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_31_fu_1556_p2 | -   |        | cumulativeAngleTheta_V_31 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_32_fu_1565_p2 | -   |        | cumulativeAngleTheta_V_32 | add | fabric | 0       |
+|   minimizationFunction_V_34_fu_1574_p2 | -   |        | minimizationFunction_V_34 | sub | fabric | 0       |
+|   minimizationFunction_V_36_fu_1579_p2 | -   |        | minimizationFunction_V_36 | sub | fabric | 0       |
+|   xCartesian_V_24_fu_1719_p2           | -   |        | xCartesian_V_24           | sub | fabric | 0       |
+|   yCartesian_V_82_fu_1775_p2           | -   |        | yCartesian_V_82           | add | fabric | 0       |
+|   xCartesian_V_25_fu_1725_p2           | -   |        | xCartesian_V_25           | add | fabric | 0       |
+|   yCartesian_V_83_fu_1780_p2           | -   |        | yCartesian_V_83           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_36_fu_1731_p2 | -   |        | cumulativeAngleTheta_V_36 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_37_fu_1737_p2 | -   |        | cumulativeAngleTheta_V_37 | add | fabric | 0       |
+|   minimizationFunction_V_39_fu_1791_p2 | -   |        | minimizationFunction_V_39 | sub | fabric | 0       |
+|   minimizationFunction_V_41_fu_1796_p2 | -   |        | minimizationFunction_V_41 | sub | fabric | 0       |
+|   xCartesian_V_27_fu_1906_p2           | -   |        | xCartesian_V_27           | sub | fabric | 0       |
+|   yCartesian_V_84_fu_1911_p2           | -   |        | yCartesian_V_84           | add | fabric | 0       |
+|   xCartesian_V_28_fu_1917_p2           | -   |        | xCartesian_V_28           | add | fabric | 0       |
+|   yCartesian_V_85_fu_1922_p2           | -   |        | yCartesian_V_85           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_41_fu_1928_p2 | -   |        | cumulativeAngleTheta_V_41 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_42_fu_1938_p2 | -   |        | cumulativeAngleTheta_V_42 | add | fabric | 0       |
+|   minimizationFunction_V_44_fu_1948_p2 | -   |        | minimizationFunction_V_44 | sub | fabric | 0       |
+|   minimizationFunction_V_46_fu_1953_p2 | -   |        | minimizationFunction_V_46 | sub | fabric | 0       |
+|   xCartesian_V_30_fu_2094_p2           | -   |        | xCartesian_V_30           | sub | fabric | 0       |
+|   yCartesian_V_86_fu_2099_p2           | -   |        | yCartesian_V_86           | add | fabric | 0       |
+|   xCartesian_V_31_fu_2105_p2           | -   |        | xCartesian_V_31           | add | fabric | 0       |
+|   yCartesian_V_87_fu_2110_p2           | -   |        | yCartesian_V_87           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_46_fu_2116_p2 | -   |        | cumulativeAngleTheta_V_46 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_47_fu_2125_p2 | -   |        | cumulativeAngleTheta_V_47 | add | fabric | 0       |
+|   minimizationFunction_V_49_fu_2134_p2 | -   |        | minimizationFunction_V_49 | sub | fabric | 0       |
+|   minimizationFunction_V_51_fu_2139_p2 | -   |        | minimizationFunction_V_51 | sub | fabric | 0       |
+|   xCartesian_V_33_fu_2285_p2           | -   |        | xCartesian_V_33           | sub | fabric | 0       |
+|   yCartesian_V_88_fu_2341_p2           | -   |        | yCartesian_V_88           | add | fabric | 0       |
+|   xCartesian_V_34_fu_2291_p2           | -   |        | xCartesian_V_34           | add | fabric | 0       |
+|   yCartesian_V_89_fu_2346_p2           | -   |        | yCartesian_V_89           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_51_fu_2297_p2 | -   |        | cumulativeAngleTheta_V_51 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_52_fu_2303_p2 | -   |        | cumulativeAngleTheta_V_52 | add | fabric | 0       |
+|   minimizationFunction_V_54_fu_2357_p2 | -   |        | minimizationFunction_V_54 | sub | fabric | 0       |
+|   minimizationFunction_V_56_fu_2362_p2 | -   |        | minimizationFunction_V_56 | sub | fabric | 0       |
+|   xCartesian_V_36_fu_2472_p2           | -   |        | xCartesian_V_36           | sub | fabric | 0       |
+|   yCartesian_V_90_fu_2477_p2           | -   |        | yCartesian_V_90           | add | fabric | 0       |
+|   xCartesian_V_37_fu_2483_p2           | -   |        | xCartesian_V_37           | add | fabric | 0       |
+|   yCartesian_V_91_fu_2488_p2           | -   |        | yCartesian_V_91           | sub | fabric | 0       |
+|   cumulativeAngleTheta_V_56_fu_2494_p2 | -   |        | cumulativeAngleTheta_V_56 | add | fabric | 0       |
+|   cumulativeAngleTheta_V_57_fu_2504_p2 | -   |        | cumulativeAngleTheta_V_57 | add | fabric | 0       |
+|   minimizationFunction_V_59_fu_2514_p2 | -   |        | minimizationFunction_V_59 | sub | fabric | 0       |
+|   minimizationFunction_V_61_fu_2519_p2 | -   |        | minimizationFunction_V_61 | sub | fabric | 0       |
+|   xCartesian_V_39_fu_2665_p2           | -   |        | xCartesian_V_39           | sub | fabric | 0       |
+|   yCartesian_V_39_fu_2670_p2           | -   |        | yCartesian_V_39           | add | fabric | 0       |
+|   minimizationFunction_V_63_fu_2675_p2 | -   |        | minimizationFunction_V_63 | sub | fabric | 0       |
+|   xCartesian_V_40_fu_2680_p2           | -   |        | xCartesian_V_40           | add | fabric | 0       |
+|   yCartesian_V_40_fu_2685_p2           | -   |        | yCartesian_V_40           | sub | fabric | 0       |
+|   xCartesian_V_42_fu_2788_p2           | -   |        | xCartesian_V_42           | sub | fabric | 0       |
+|   yCartesian_V_42_fu_2794_p2           | -   |        | yCartesian_V_42           | add | fabric | 0       |
+|   xCartesian_V_43_fu_2800_p2           | -   |        | xCartesian_V_43           | add | fabric | 0       |
+|   yCartesian_V_43_fu_2806_p2           | -   |        | yCartesian_V_43           | sub | fabric | 0       |
+|   xCartesian_V_45_fu_2914_p2           | -   |        | xCartesian_V_45           | sub | fabric | 0       |
+|   yCartesian_V_45_fu_2918_p2           | -   |        | yCartesian_V_45           | add | fabric | 0       |
+|   xCartesian_V_46_fu_2922_p2           | -   |        | xCartesian_V_46           | add | fabric | 0       |
+|   yCartesian_V_46_fu_2926_p2           | -   |        | yCartesian_V_46           | sub | fabric | 0       |
+|   xCartesian_V_48_fu_3027_p2           | -   |        | xCartesian_V_48           | sub | fabric | 0       |
+|   yCartesian_V_48_fu_3033_p2           | -   |        | yCartesian_V_48           | add | fabric | 0       |
+|   xCartesian_V_49_fu_3039_p2           | -   |        | xCartesian_V_49           | add | fabric | 0       |
+|   yCartesian_V_49_fu_3045_p2           | -   |        | yCartesian_V_49           | sub | fabric | 0       |
+|   xCartesian_V_51_fu_3146_p2           | -   |        | xCartesian_V_51           | sub | fabric | 0       |
+|   yCartesian_V_51_fu_3151_p2           | -   |        | yCartesian_V_51           | add | fabric | 0       |
+|   xCartesian_V_52_fu_3156_p2           | -   |        | xCartesian_V_52           | add | fabric | 0       |
+|   yCartesian_V_52_fu_3161_p2           | -   |        | yCartesian_V_52           | sub | fabric | 0       |
+|   xCartesian_V_54_fu_3266_p2           | -   |        | xCartesian_V_54           | sub | fabric | 0       |
+|   yCartesian_V_54_fu_3272_p2           | -   |        | yCartesian_V_54           | add | fabric | 0       |
+|   xCartesian_V_55_fu_3278_p2           | -   |        | xCartesian_V_55           | add | fabric | 0       |
+|   yCartesian_V_55_fu_3284_p2           | -   |        | yCartesian_V_55           | sub | fabric | 0       |
+|   xCartesian_V_57_fu_3381_p2           | -   |        | xCartesian_V_57           | add | fabric | 0       |
+|   yCartesian_V_57_fu_3387_p2           | -   |        | yCartesian_V_57           | sub | fabric | 0       |
+|   xCartesian_V_58_fu_3393_p2           | -   |        | xCartesian_V_58           | sub | fabric | 0       |
+|   yCartesian_V_58_fu_3399_p2           | -   |        | yCartesian_V_58           | add | fabric | 0       |
+|   xCartesian_V_60_fu_3435_p2           | -   |        | xCartesian_V_60           | sub | fabric | 0       |
+|   yCartesian_V_60_fu_3455_p2           | -   |        | yCartesian_V_60           | sub | fabric | 0       |
+|   xCartesian_V_61_fu_3484_p2           | -   |        | xCartesian_V_61           | add | fabric | 0       |
+|   yCartesian_V_61_fu_3492_p2           | -   |        | yCartesian_V_61           | add | fabric | 0       |
+|   xCartesian_V_62_fu_3511_p2           | -   |        | xCartesian_V_62           | sub | fabric | 0       |
+|   yCartesian_V_62_fu_3531_p2           | -   |        | yCartesian_V_62           | sub | fabric | 0       |
+|   xCartesian_V_63_fu_3551_p2           | -   |        | xCartesian_V_63           | add | fabric | 0       |
+|   yCartesian_V_63_fu_3571_p2           | -   |        | yCartesian_V_63           | add | fabric | 0       |
+|   xCartesian_V_64_fu_3592_p2           | -   |        | xCartesian_V_64           | add | fabric | 0       |
+|   yCartesian_V_64_fu_3612_p2           | -   |        | yCartesian_V_64           | add | fabric | 0       |
+|   xCartesian_V_65_fu_3633_p2           | -   |        | xCartesian_V_65           | add | fabric | 0       |
+|   yCartesian_V_65_fu_3655_p2           | -   |        | yCartesian_V_65           | add | fabric | 0       |
+|   c                                    | -   |        | xCartesian_V_66           | add | fabric | 0       |
+|   s                                    | -   |        | yCartesian_V_66           | add | fabric | 0       |
++----------------------------------------+-----+--------+---------------------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+-------------------------------------+
+| Type     | Options | Location                            |
++----------+---------+-------------------------------------+
+| pipeline | II = 1  | ../fpga_hls/cordic.cpp:67 in cordic |
++----------+---------+-------------------------------------+
+
+
