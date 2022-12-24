@@ -1,0 +1,833 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>cordic</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <TargetInitiationInterval>1</TargetInitiationInterval>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>yes</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.292</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>25</Best-caseLatency>
+            <Average-caseLatency>25</Average-caseLatency>
+            <Worst-caseLatency>25</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.250 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.250 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.250 us</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>1</PipelineInitiationInterval>
+            <PipelineDepth>26</PipelineDepth>
+            <Interval-min>1</Interval-min>
+            <Interval-max>1</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>3207</FF>
+            <LUT>7381</LUT>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_AWVALID</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_AWREADY</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_AWADDR</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>7</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_WVALID</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_WREADY</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_WDATA</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_WSTRB</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_ARVALID</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_ARREADY</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_ARADDR</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>7</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_RVALID</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_RREADY</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_RDATA</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_RRESP</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_BVALID</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_BREADY</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_HLS_TREEADD_PERIPH_BUS_BRESP</name>
+            <Object>HLS_TREEADD_PERIPH_BUS</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>cordic</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>cordic</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>cordic</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>cordic</ModuleName>
+            <BindInstances>current_sin_V_129_fu_459_p2 current_cos_V_fu_463_p2 current_sin_V_130_fu_467_p2 theta_V_fu_285_p2 current_cos_V_4_fu_589_p2 current_sin_V_fu_595_p2 current_cos_V_5_fu_601_p2 current_sin_V_5_fu_607_p2 current_cos_V_6_fu_613_p2 current_sin_V_132_fu_619_p2 current_cos_V_7_fu_625_p2 current_sin_V_133_fu_631_p2 current_cos_V_10_fu_731_p2 current_sin_V_10_fu_737_p2 current_cos_V_11_fu_743_p2 current_sin_V_11_fu_749_p2 current_cos_V_12_fu_755_p2 current_sin_V_134_fu_761_p2 current_cos_V_13_fu_767_p2 current_sin_V_135_fu_773_p2 current_cos_V_16_fu_911_p2 current_sin_V_16_fu_916_p2 current_cos_V_17_fu_921_p2 current_sin_V_17_fu_926_p2 current_cos_V_18_fu_931_p2 current_sin_V_136_fu_936_p2 current_cos_V_19_fu_941_p2 current_sin_V_137_fu_946_p2 current_cos_V_22_fu_1010_p2 current_sin_V_22_fu_1016_p2 current_cos_V_23_fu_1022_p2 current_sin_V_23_fu_1028_p2 current_cos_V_24_fu_1147_p2 current_sin_V_138_fu_1152_p2 current_cos_V_25_fu_1158_p2 current_sin_V_139_fu_1163_p2 current_cos_V_28_fu_1239_p2 current_sin_V_28_fu_1244_p2 current_cos_V_29_fu_1249_p2 current_sin_V_29_fu_1254_p2 current_cos_V_30_fu_1259_p2 current_sin_V_140_fu_1486_p2 current_cos_V_31_fu_1265_p2 current_sin_V_141_fu_1491_p2 current_cos_V_34_fu_1347_p2 current_sin_V_34_fu_1353_p2 current_cos_V_35_fu_1359_p2 current_sin_V_35_fu_1365_p2 current_cos_V_36_fu_1528_p2 current_sin_V_142_fu_1533_p2 current_cos_V_37_fu_1539_p2 current_sin_V_143_fu_1544_p2 current_cos_V_40_fu_1582_p2 current_sin_V_40_fu_1587_p2 current_cos_V_41_fu_1592_p2 current_sin_V_41_fu_1597_p2 current_cos_V_42_fu_1781_p2 current_sin_V_144_fu_1786_p2 current_cos_V_43_fu_1792_p2 current_sin_V_145_fu_1797_p2 current_cos_V_46_fu_1644_p2 current_sin_V_46_fu_1650_p2 current_cos_V_47_fu_1656_p2 current_sin_V_47_fu_1662_p2 current_cos_V_48_fu_1871_p2 current_sin_V_146_fu_1877_p2 current_cos_V_49_fu_1883_p2 current_sin_V_147_fu_1889_p2 current_cos_V_52_fu_1961_p2 current_sin_V_52_fu_1966_p2 current_cos_V_53_fu_1971_p2 current_sin_V_53_fu_1976_p2 current_cos_V_54_fu_2127_p2 current_sin_V_148_fu_2132_p2 current_cos_V_55_fu_2137_p2 current_sin_V_149_fu_2142_p2 current_cos_V_58_fu_2023_p2 current_sin_V_58_fu_2029_p2 current_cos_V_59_fu_2035_p2 current_sin_V_59_fu_2041_p2 current_cos_V_60_fu_2379_p2 current_sin_V_150_fu_2384_p2 current_cos_V_61_fu_2390_p2 current_sin_V_151_fu_2395_p2 current_sin_V_152_fu_2465_p2 current_sin_V_153_fu_2471_p2 current_cos_V_63_fu_2170_p2 current_sin_V_66_fu_2175_p2 current_cos_V_64_fu_2180_p2 current_sin_V_67_fu_2185_p2 current_cos_V_66_fu_2258_p2 current_sin_V_69_fu_2264_p2 current_cos_V_67_fu_2270_p2 current_sin_V_70_fu_2276_p2 current_cos_V_69_fu_2541_p2 current_sin_V_72_fu_2546_p2 current_cos_V_70_fu_2551_p2 current_sin_V_73_fu_2556_p2 current_cos_V_72_fu_2605_p2 current_sin_V_75_fu_2611_p2 current_cos_V_73_fu_2617_p2 current_sin_V_76_fu_2623_p2 current_cos_V_75_fu_2707_p2 current_sin_V_78_fu_2713_p2 current_cos_V_76_fu_2719_p2 current_sin_V_79_fu_2725_p2 current_cos_V_78_fu_2795_p2 current_sin_V_81_fu_2799_p2 current_cos_V_79_fu_2803_p2 current_sin_V_82_fu_2807_p2 current_cos_V_81_fu_2857_p2 current_sin_V_84_fu_2863_p2 current_cos_V_82_fu_2869_p2 current_sin_V_85_fu_2875_p2 current_cos_V_84_fu_2938_p2 current_sin_V_87_fu_2943_p2 current_cos_V_85_fu_2948_p2 current_sin_V_88_fu_2953_p2 current_cos_V_87_fu_3004_p2 current_sin_V_90_fu_3010_p2 current_cos_V_88_fu_3016_p2 current_sin_V_91_fu_3022_p2 current_cos_V_90_fu_3070_p2 current_sin_V_93_fu_3076_p2 current_cos_V_91_fu_3082_p2 current_sin_V_94_fu_3088_p2 current_cos_V_93_fu_3140_p2 current_sin_V_96_fu_3144_p2 current_cos_V_94_fu_3148_p2 current_sin_V_97_fu_3152_p2 current_cos_V_96_fu_3202_p2 current_sin_V_99_fu_3208_p2 current_cos_V_97_fu_3214_p2 current_sin_V_100_fu_3220_p2 current_cos_V_99_fu_3270_p2 current_sin_V_102_fu_3275_p2 current_cos_V_100_fu_3280_p2 current_sin_V_103_fu_3285_p2 current_cos_V_102_fu_3336_p2 current_sin_V_105_fu_3342_p2 current_cos_V_103_fu_3348_p2 current_sin_V_106_fu_3354_p2 current_cos_V_105_fu_3402_p2 current_sin_V_108_fu_3408_p2 current_cos_V_106_fu_3414_p2 current_sin_V_109_fu_3420_p2 current_cos_V_108_fu_3472_p2 current_sin_V_111_fu_3476_p2 current_cos_V_109_fu_3480_p2 current_sin_V_112_fu_3484_p2 current_cos_V_111_fu_3534_p2 current_sin_V_114_fu_3540_p2 current_cos_V_112_fu_3546_p2 current_sin_V_115_fu_3552_p2 current_cos_V_114_fu_3602_p2 current_sin_V_117_fu_3607_p2 current_cos_V_115_fu_3612_p2 current_sin_V_118_fu_3617_p2 current_cos_V_117_fu_3668_p2 current_sin_V_120_fu_3674_p2 current_cos_V_118_fu_3680_p2 current_sin_V_121_fu_3686_p2 current_cos_V_120_fu_3734_p2 current_sin_V_123_fu_3740_p2 current_cos_V_121_fu_3746_p2 current_sin_V_124_fu_3752_p2 current_cos_V_123_fu_3804_p2 current_sin_V_126_fu_3808_p2 current_cos_V_124_fu_3812_p2 current_sin_V_127_fu_3816_p2 x_s_V_fu_3848_p2 x_s_V_1_fu_3868_p2 x_s_V_2_fu_3937_p2 x_s_V_3_fu_3956_p2 x_s_V_4_fu_3978_p2 x_s_V_5_fu_4049_p2 x_s_V_6_fu_4070_p2 y_s_V_fu_3898_p2 y_s_V_1_fu_3918_p2 y_s_V_2_fu_3987_p2 y_s_V_3_fu_4006_p2 y_s_V_4_fu_4028_p2 y_s_V_5_fu_4091_p2 y_s_V_6_fu_4112_p2 add_ln1697_25_fu_1439_p2 add_ln1697_26_fu_1449_p2 add_ln1697_28_fu_2115_p2 add_ln1697_30_fu_2634_p2 add_ln1697_31_fu_2644_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>cordic</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>7.292</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>25</Best-caseLatency>
+                    <Average-caseLatency>25</Average-caseLatency>
+                    <Worst-caseLatency>25</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.250 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.250 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.250 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>26</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>3207</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>7381</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>13</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_129_fu_459_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_129"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_fu_463_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_130_fu_467_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_130"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="theta_V_fu_285_p2" SOURCE="cordic.cpp:49" URAM="0" VARIABLE="theta_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_4_fu_589_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_fu_595_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_5_fu_601_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_5_fu_607_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_6_fu_613_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_132_fu_619_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_132"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_7_fu_625_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_133_fu_631_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_133"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_10_fu_731_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_10_fu_737_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_11_fu_743_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_11_fu_749_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_12_fu_755_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_134_fu_761_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_134"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_13_fu_767_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_135_fu_773_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_135"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_16_fu_911_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_16_fu_916_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_17_fu_921_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_17_fu_926_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_18_fu_931_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_136_fu_936_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_136"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_19_fu_941_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_137_fu_946_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_137"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_22_fu_1010_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_22_fu_1016_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_23_fu_1022_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_23_fu_1028_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_24_fu_1147_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_138_fu_1152_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_138"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_25_fu_1158_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_139_fu_1163_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_139"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_28_fu_1239_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_28_fu_1244_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_29_fu_1249_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_29_fu_1254_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_30_fu_1259_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_140_fu_1486_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_140"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_31_fu_1265_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_31"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_141_fu_1491_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_141"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_34_fu_1347_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_34_fu_1353_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_35_fu_1359_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_35_fu_1365_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_36_fu_1528_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_142_fu_1533_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_142"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_37_fu_1539_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_37"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_143_fu_1544_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_143"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_40_fu_1582_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_40_fu_1587_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_41_fu_1592_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_41_fu_1597_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_42_fu_1781_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_144_fu_1786_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_144"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_43_fu_1792_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_145_fu_1797_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_145"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_46_fu_1644_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_46_fu_1650_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_47_fu_1656_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_47_fu_1662_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_48_fu_1871_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_146_fu_1877_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_146"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_49_fu_1883_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_147_fu_1889_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_147"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_52_fu_1961_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_52_fu_1966_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_53_fu_1971_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_53"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_53_fu_1976_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_53"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_54_fu_2127_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_148_fu_2132_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_148"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_55_fu_2137_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_149_fu_2142_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_149"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_58_fu_2023_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_58_fu_2029_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_59_fu_2035_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_59_fu_2041_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_60_fu_2379_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_150_fu_2384_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_150"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_61_fu_2390_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_61"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_151_fu_2395_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_151"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_152_fu_2465_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_152"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_153_fu_2471_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_153"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_63_fu_2170_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_63"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_66_fu_2175_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_66"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_64_fu_2180_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_64"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_67_fu_2185_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_67"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_66_fu_2258_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_66"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_69_fu_2264_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_69"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_67_fu_2270_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_67"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_70_fu_2276_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_69_fu_2541_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_69"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_72_fu_2546_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_72"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_70_fu_2551_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_73_fu_2556_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_73"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_72_fu_2605_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_72"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_75_fu_2611_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_75"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_73_fu_2617_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_73"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_76_fu_2623_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_76"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_75_fu_2707_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_75"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_78_fu_2713_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_78"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_76_fu_2719_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_76"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_79_fu_2725_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_79"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_78_fu_2795_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_78"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_81_fu_2799_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_81"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_79_fu_2803_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_79"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_82_fu_2807_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_82"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_81_fu_2857_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_81"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_84_fu_2863_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_82_fu_2869_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_82"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_85_fu_2875_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_85"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_84_fu_2938_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_87_fu_2943_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_87"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_85_fu_2948_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_85"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_88_fu_2953_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_88"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_87_fu_3004_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_87"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_90_fu_3010_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_90"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_88_fu_3016_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_88"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_91_fu_3022_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_91"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_90_fu_3070_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_90"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_93_fu_3076_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_93"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_91_fu_3082_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_91"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_94_fu_3088_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_94"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_93_fu_3140_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_93"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_96_fu_3144_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_96"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_94_fu_3148_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_94"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_97_fu_3152_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_97"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_96_fu_3202_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_96"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_99_fu_3208_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_99"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_97_fu_3214_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_97"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_100_fu_3220_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_100"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_99_fu_3270_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_99"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_102_fu_3275_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_100_fu_3280_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_100"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_103_fu_3285_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_103"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_102_fu_3336_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_105_fu_3342_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_105"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_103_fu_3348_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_103"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_106_fu_3354_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_106"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_105_fu_3402_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_105"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_108_fu_3408_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_108"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_106_fu_3414_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_106"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_109_fu_3420_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_109"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_108_fu_3472_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_108"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_111_fu_3476_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_111"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_109_fu_3480_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_109"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_112_fu_3484_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_112"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_111_fu_3534_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_111"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_114_fu_3540_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_114"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_112_fu_3546_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_112"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_115_fu_3552_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_115"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_114_fu_3602_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_114"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_117_fu_3607_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_117"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_115_fu_3612_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_115"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_118_fu_3617_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_118"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_117_fu_3668_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_117"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_120_fu_3674_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_120"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_118_fu_3680_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_118"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_121_fu_3686_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_121"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_120_fu_3734_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_120"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_123_fu_3740_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_123"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_121_fu_3746_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_121"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_124_fu_3752_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_124"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_cos_V_123_fu_3804_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_123"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_sin_V_126_fu_3808_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_126"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="current_cos_V_124_fu_3812_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_cos_V_124"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="current_sin_V_127_fu_3816_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="current_sin_V_127"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="x_s_V_fu_3848_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="x_s_V_1_fu_3868_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="x_s_V_2_fu_3937_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="x_s_V_3_fu_3956_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="x_s_V_4_fu_3978_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="x_s_V_5_fu_4049_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="x_s_V_6_fu_4070_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="x_s_V_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="y_s_V_fu_3898_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="y_s_V_1_fu_3918_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="y_s_V_2_fu_3987_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="y_s_V_3_fu_4006_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="y_s_V_4_fu_4028_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="y_s_V_5_fu_4091_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="y_s_V_6_fu_4112_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859" URAM="0" VARIABLE="y_s_V_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1697_25_fu_1439_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1697" URAM="0" VARIABLE="add_ln1697_25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1697_26_fu_1449_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1697" URAM="0" VARIABLE="add_ln1697_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1697_28_fu_2115_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1697" URAM="0" VARIABLE="add_ln1697_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1697_30_fu_2634_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1697" URAM="0" VARIABLE="add_ln1697_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1697_31_fu_2644_p2" SOURCE="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1697" URAM="0" VARIABLE="add_ln1697_31"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_op>
+            <ENTRY impl="all mul" latency="-1 mul" op="mul" precision="mul standard"/>
+            <ENTRY impl="all add" latency="-1 add" op="add" precision="add standard"/>
+            <ENTRY impl="all sub" latency="-1 sub" op="sub" precision="sub standard"/>
+            <ENTRY impl="all fadd" latency="-1 fadd" op="fadd" precision="fadd standard"/>
+            <ENTRY impl="all fsub" latency="-1 fsub" op="fsub" precision="fsub standard"/>
+            <ENTRY impl="all fdiv" latency="-1 fdiv" op="fdiv" precision="fdiv standard"/>
+            <ENTRY impl="all fexp" latency="-1 fexp" op="fexp" precision="fexp standard"/>
+            <ENTRY impl="all flog" latency="-1 flog" op="flog" precision="flog standard"/>
+            <ENTRY impl="all fmul" latency="-1 fmul" op="fmul" precision="fmul standard"/>
+            <ENTRY impl="all frsqrt" latency="-1 frsqrt" op="frsqrt" precision="frsqrt standard"/>
+            <ENTRY impl="all frecip" latency="-1 frecip" op="frecip" precision="frecip standard"/>
+            <ENTRY impl="all fsqrt" latency="-1 fsqrt" op="fsqrt" precision="fsqrt standard"/>
+            <ENTRY impl="all dadd" latency="-1 dadd" op="dadd" precision="dadd standard"/>
+            <ENTRY impl="all dsub" latency="-1 dsub" op="dsub" precision="dsub standard"/>
+            <ENTRY impl="all ddiv" latency="-1 ddiv" op="ddiv" precision="ddiv standard"/>
+            <ENTRY impl="all dexp" latency="-1 dexp" op="dexp" precision="dexp standard"/>
+            <ENTRY impl="all dlog" latency="-1 dlog" op="dlog" precision="dlog standard"/>
+            <ENTRY impl="all dmul" latency="-1 dmul" op="dmul" precision="dmul standard"/>
+            <ENTRY impl="all drsqrt" latency="-1 drsqrt" op="drsqrt" precision="drsqrt standard"/>
+            <ENTRY impl="all drecip" latency="-1 drecip" op="drecip" precision="drecip standard"/>
+            <ENTRY impl="all dsqrt" latency="-1 dsqrt" op="dsqrt" precision="dsqrt standard"/>
+            <ENTRY impl="all hadd" latency="-1 hadd" op="hadd" precision="hadd standard"/>
+            <ENTRY impl="all hsub" latency="-1 hsub" op="hsub" precision="hsub standard"/>
+            <ENTRY impl="all hdiv" latency="-1 hdiv" op="hdiv" precision="hdiv standard"/>
+            <ENTRY impl="all hmul" latency="-1 hmul" op="hmul" precision="hmul standard"/>
+            <ENTRY impl="all hsqrt" latency="-1 hsqrt" op="hsqrt" precision="hsqrt standard"/>
+            <ENTRY impl="all facc" latency="-1 facc" op="facc" precision="facc standard"/>
+            <ENTRY impl="all fmacc" latency="-1 fmacc" op="fmacc" precision="fmacc standard"/>
+            <ENTRY impl="all fmadd" latency="-1 fmadd" op="fmadd" precision="fmadd standard"/>
+        </config_op>
+        <config_storage>
+            <ENTRY auto_srl_max_bits="1024 fifo" auto_srl_max_depth="2 fifo" impl="autosrl fifo" type="fifo"/>
+        </config_storage>
+        <config_export output="C:/ELEC522/jag33/proj3/Modelcompser"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="state" index="0" direction="in" srcType="bool" srcSize="1">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="state" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="theta" index="1" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="theta" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="x" index="2" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="x" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="y" index="3" direction="in" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="y" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="s" index="4" direction="out" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="s" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="s_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="c" index="5" direction="out" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="c" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="c_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="t" index="6" direction="out" srcType="ap_fixed&lt;16, 3, AP_TRN, AP_WRAP, 0&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="t" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_HLS_TREEADD_PERIPH_BUS" name="t_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_HLS_TREEADD_PERIPH_BUS" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="7" portPrefix="s_axi_HLS_TREEADD_PERIPH_BUS_" paramPrefix="C_S_AXI_HLS_TREEADD_PERIPH_BUS_">
+            <ports>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_ARADDR</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_ARREADY</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_ARVALID</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_AWADDR</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_AWREADY</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_AWVALID</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_BREADY</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_BRESP</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_BVALID</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_RDATA</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_RREADY</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_RRESP</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_RVALID</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_WDATA</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_WREADY</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_WSTRB</port>
+                <port>s_axi_HLS_TREEADD_PERIPH_BUS_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="R" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="R" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="state" access="W" description="Data signal of state" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="state" access="W" description="Bit 0 to 0 of state"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="theta" access="W" description="Data signal of theta" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="theta" access="W" description="Bit 15 to 0 of theta"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="x" access="W" description="Data signal of x" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="x" access="W" description="Bit 15 to 0 of x"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="y" access="W" description="Data signal of y" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="y" access="W" description="Bit 15 to 0 of y"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="s" access="R" description="Data signal of s" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="s" access="R" description="Bit 15 to 0 of s"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x34" name="s_ctrl" access="R" description="Control signal of s" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="s_ap_vld" access="R" description="Control signal s_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x40" name="c" access="R" description="Data signal of c" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="c" access="R" description="Bit 15 to 0 of c"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x44" name="c_ctrl" access="R" description="Control signal of c" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="c_ap_vld" access="R" description="Control signal c_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x50" name="t" access="R" description="Data signal of t" range="32">
+                    <fields>
+                        <field offset="0" width="16" name="t" access="R" description="Bit 15 to 0 of t"/>
+                        <field offset="16" width="16" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x54" name="t_ctrl" access="R" description="Control signal of t" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="t_ap_vld" access="R" description="Control signal t_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="state"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="theta"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="x"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40" argName="y"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="s"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="64" argName="c"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="80" argName="t"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_HLS_TREEADD_PERIPH_BUS</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table isCollapsed="0">
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">32, 7, 16, 0, , , , , </column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table isCollapsed="0">
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">state, 0x10, 32, W, Data signal of state, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">theta, 0x18, 32, W, Data signal of theta, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">x, 0x20, 32, W, Data signal of x, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">y, 0x28, 32, W, Data signal of y, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">s, 0x30, 32, R, Data signal of s, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">s_ctrl, 0x34, 32, R, Control signal of s, 0=s_ap_vld</column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">c, 0x40, 32, R, Data signal of c, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">c_ctrl, 0x44, 32, R, Control signal of c, 0=c_ap_vld</column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">t, 0x50, 32, R, Data signal of t, </column>
+                    <column name="s_axi_HLS_TREEADD_PERIPH_BUS">t_ctrl, 0x54, 32, R, Control signal of t, 0=t_ap_vld</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst_n">reset, ap_rst_n, </column>
+                    <column name="interrupt">interrupt, interrupt, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="state">in, bool</column>
+                    <column name="theta">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;</column>
+                    <column name="x">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;</column>
+                    <column name="y">in, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;</column>
+                    <column name="s">out, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;&amp;</column>
+                    <column name="c">out, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;&amp;</column>
+                    <column name="t">out, ap_fixed&lt;16 3 AP_TRN AP_WRAP 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="state">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=state offset=0x10 range=32, </column>
+                    <column name="theta">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=theta offset=0x18 range=32, </column>
+                    <column name="x">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=x offset=0x20 range=32, </column>
+                    <column name="y">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=y offset=0x28 range=32, </column>
+                    <column name="s">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=s offset=0x30 range=32, </column>
+                    <column name="s">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=s_ctrl offset=0x34 range=32, </column>
+                    <column name="c">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=c offset=0x40 range=32, </column>
+                    <column name="c">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=c_ctrl offset=0x44 range=32, </column>
+                    <column name="t">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=t offset=0x50 range=32, </column>
+                    <column name="t">s_axi_HLS_TREEADD_PERIPH_BUS, register, name=t_ctrl offset=0x54 range=32, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport>
+        <Pragma type="interface" location="cordic.cpp:13" status="valid" parentFunction="cordic" variable="return" isDirective="0" options="s_axilite port=return bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:14" status="valid" parentFunction="cordic" variable="state" isDirective="0" options="s_axilite port=state bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:15" status="valid" parentFunction="cordic" variable="theta" isDirective="0" options="s_axilite port=theta bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:16" status="valid" parentFunction="cordic" variable="x" isDirective="0" options="s_axilite port=x bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:17" status="valid" parentFunction="cordic" variable="y" isDirective="0" options="s_axilite port=y bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:18" status="valid" parentFunction="cordic" variable="s" isDirective="0" options="s_axilite port=s bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:19" status="valid" parentFunction="cordic" variable="c" isDirective="0" options="s_axilite port=c bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="interface" location="cordic.cpp:20" status="valid" parentFunction="cordic" variable="t" isDirective="0" options="s_axilite port=t bundle=HLS_TREEADD_PERIPH_BUS"/>
+        <Pragma type="pipeline" location="cordic.cpp:39" status="valid" parentFunction="cordic" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+</profile>
+

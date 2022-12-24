@@ -1,0 +1,322 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cordic'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 15 13:01:14 2022
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        cordic
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |  Modules | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |            |     |
+    |  & Loops | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |+ cordic  |     -|  0.01|       25|  250.000|         -|        1|     -|       yes|     -|   -|  3207 (3%)|  7381 (13%)|    -|
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------------------------+------------+---------------+--------+----------+
+| Interface                    | Data Width | Address Width | Offset | Register |
++------------------------------+------------+---------------+--------+----------+
+| s_axi_HLS_TREEADD_PERIPH_BUS | 32         | 7             | 16     | 0        |
++------------------------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface                    | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_HLS_TREEADD_PERIPH_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_HLS_TREEADD_PERIPH_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_HLS_TREEADD_PERIPH_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_HLS_TREEADD_PERIPH_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_HLS_TREEADD_PERIPH_BUS | state    | 0x10   | 32    | W      | Data signal of state             |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | theta    | 0x18   | 32    | W      | Data signal of theta             |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | x        | 0x20   | 32    | W      | Data signal of x                 |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | y        | 0x28   | 32    | W      | Data signal of y                 |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | s        | 0x30   | 32    | R      | Data signal of s                 |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | s_ctrl   | 0x34   | 32    | R      | Control signal of s              | 0=s_ap_vld                                                           |
+| s_axi_HLS_TREEADD_PERIPH_BUS | c        | 0x40   | 32    | R      | Data signal of c                 |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | c_ctrl   | 0x44   | 32    | R      | Control signal of c              | 0=c_ap_vld                                                           |
+| s_axi_HLS_TREEADD_PERIPH_BUS | t        | 0x50   | 32    | R      | Data signal of t                 |                                                                      |
+| s_axi_HLS_TREEADD_PERIPH_BUS | t_ctrl   | 0x54   | 32    | R      | Control signal of t              | 0=t_ap_vld                                                           |
++------------------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------+
+| Argument | Direction | Datatype                             |
++----------+-----------+--------------------------------------+
+| state    | in        | bool                                 |
+| theta    | in        | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>  |
+| x        | in        | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>  |
+| y        | in        | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>  |
+| s        | out       | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>& |
+| c        | out       | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>& |
+| t        | out       | ap_fixed<16, 3, AP_TRN, AP_WRAP, 0>& |
++----------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------+------------------------------+----------+----------------------------------+
+| Argument | HW Interface                 | HW Type  | HW Info                          |
++----------+------------------------------+----------+----------------------------------+
+| state    | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=state offset=0x10 range=32  |
+| theta    | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=theta offset=0x18 range=32  |
+| x        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=x offset=0x20 range=32      |
+| y        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=y offset=0x28 range=32      |
+| s        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=s offset=0x30 range=32      |
+| s        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=s_ctrl offset=0x34 range=32 |
+| c        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=c offset=0x40 range=32      |
+| c        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=c_ctrl offset=0x44 range=32 |
+| t        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=t offset=0x50 range=32      |
+| t        | s_axi_HLS_TREEADD_PERIPH_BUS | register | name=t_ctrl offset=0x54 range=32 |
++----------+------------------------------+----------+----------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------+-----+--------+-------------------+-----+--------+---------+
+| Name                           | DSP | Pragma | Variable          | Op  | Impl   | Latency |
++--------------------------------+-----+--------+-------------------+-----+--------+---------+
+| + cordic                       | 0   |        |                   |     |        |         |
+|   current_sin_V_129_fu_459_p2  | -   |        | current_sin_V_129 | add | fabric | 0       |
+|   current_cos_V_fu_463_p2      | -   |        | current_cos_V     | sub | fabric | 0       |
+|   current_sin_V_130_fu_467_p2  | -   |        | current_sin_V_130 | sub | fabric | 0       |
+|   theta_V_fu_285_p2            | -   |        | theta_V           | add | fabric | 0       |
+|   current_cos_V_4_fu_589_p2    | -   |        | current_cos_V_4   | sub | fabric | 0       |
+|   current_sin_V_fu_595_p2      | -   |        | current_sin_V     | add | fabric | 0       |
+|   current_cos_V_5_fu_601_p2    | -   |        | current_cos_V_5   | add | fabric | 0       |
+|   current_sin_V_5_fu_607_p2    | -   |        | current_sin_V_5   | sub | fabric | 0       |
+|   current_cos_V_6_fu_613_p2    | -   |        | current_cos_V_6   | add | fabric | 0       |
+|   current_sin_V_132_fu_619_p2  | -   |        | current_sin_V_132 | sub | fabric | 0       |
+|   current_cos_V_7_fu_625_p2    | -   |        | current_cos_V_7   | sub | fabric | 0       |
+|   current_sin_V_133_fu_631_p2  | -   |        | current_sin_V_133 | add | fabric | 0       |
+|   current_cos_V_10_fu_731_p2   | -   |        | current_cos_V_10  | sub | fabric | 0       |
+|   current_sin_V_10_fu_737_p2   | -   |        | current_sin_V_10  | add | fabric | 0       |
+|   current_cos_V_11_fu_743_p2   | -   |        | current_cos_V_11  | add | fabric | 0       |
+|   current_sin_V_11_fu_749_p2   | -   |        | current_sin_V_11  | sub | fabric | 0       |
+|   current_cos_V_12_fu_755_p2   | -   |        | current_cos_V_12  | add | fabric | 0       |
+|   current_sin_V_134_fu_761_p2  | -   |        | current_sin_V_134 | sub | fabric | 0       |
+|   current_cos_V_13_fu_767_p2   | -   |        | current_cos_V_13  | sub | fabric | 0       |
+|   current_sin_V_135_fu_773_p2  | -   |        | current_sin_V_135 | add | fabric | 0       |
+|   current_cos_V_16_fu_911_p2   | -   |        | current_cos_V_16  | sub | fabric | 0       |
+|   current_sin_V_16_fu_916_p2   | -   |        | current_sin_V_16  | add | fabric | 0       |
+|   current_cos_V_17_fu_921_p2   | -   |        | current_cos_V_17  | add | fabric | 0       |
+|   current_sin_V_17_fu_926_p2   | -   |        | current_sin_V_17  | sub | fabric | 0       |
+|   current_cos_V_18_fu_931_p2   | -   |        | current_cos_V_18  | add | fabric | 0       |
+|   current_sin_V_136_fu_936_p2  | -   |        | current_sin_V_136 | sub | fabric | 0       |
+|   current_cos_V_19_fu_941_p2   | -   |        | current_cos_V_19  | sub | fabric | 0       |
+|   current_sin_V_137_fu_946_p2  | -   |        | current_sin_V_137 | add | fabric | 0       |
+|   current_cos_V_22_fu_1010_p2  | -   |        | current_cos_V_22  | sub | fabric | 0       |
+|   current_sin_V_22_fu_1016_p2  | -   |        | current_sin_V_22  | add | fabric | 0       |
+|   current_cos_V_23_fu_1022_p2  | -   |        | current_cos_V_23  | add | fabric | 0       |
+|   current_sin_V_23_fu_1028_p2  | -   |        | current_sin_V_23  | sub | fabric | 0       |
+|   current_cos_V_24_fu_1147_p2  | -   |        | current_cos_V_24  | add | fabric | 0       |
+|   current_sin_V_138_fu_1152_p2 | -   |        | current_sin_V_138 | sub | fabric | 0       |
+|   current_cos_V_25_fu_1158_p2  | -   |        | current_cos_V_25  | sub | fabric | 0       |
+|   current_sin_V_139_fu_1163_p2 | -   |        | current_sin_V_139 | add | fabric | 0       |
+|   current_cos_V_28_fu_1239_p2  | -   |        | current_cos_V_28  | sub | fabric | 0       |
+|   current_sin_V_28_fu_1244_p2  | -   |        | current_sin_V_28  | add | fabric | 0       |
+|   current_cos_V_29_fu_1249_p2  | -   |        | current_cos_V_29  | add | fabric | 0       |
+|   current_sin_V_29_fu_1254_p2  | -   |        | current_sin_V_29  | sub | fabric | 0       |
+|   current_cos_V_30_fu_1259_p2  | -   |        | current_cos_V_30  | add | fabric | 0       |
+|   current_sin_V_140_fu_1486_p2 | -   |        | current_sin_V_140 | sub | fabric | 0       |
+|   current_cos_V_31_fu_1265_p2  | -   |        | current_cos_V_31  | sub | fabric | 0       |
+|   current_sin_V_141_fu_1491_p2 | -   |        | current_sin_V_141 | add | fabric | 0       |
+|   current_cos_V_34_fu_1347_p2  | -   |        | current_cos_V_34  | sub | fabric | 0       |
+|   current_sin_V_34_fu_1353_p2  | -   |        | current_sin_V_34  | add | fabric | 0       |
+|   current_cos_V_35_fu_1359_p2  | -   |        | current_cos_V_35  | add | fabric | 0       |
+|   current_sin_V_35_fu_1365_p2  | -   |        | current_sin_V_35  | sub | fabric | 0       |
+|   current_cos_V_36_fu_1528_p2  | -   |        | current_cos_V_36  | add | fabric | 0       |
+|   current_sin_V_142_fu_1533_p2 | -   |        | current_sin_V_142 | sub | fabric | 0       |
+|   current_cos_V_37_fu_1539_p2  | -   |        | current_cos_V_37  | sub | fabric | 0       |
+|   current_sin_V_143_fu_1544_p2 | -   |        | current_sin_V_143 | add | fabric | 0       |
+|   current_cos_V_40_fu_1582_p2  | -   |        | current_cos_V_40  | sub | fabric | 0       |
+|   current_sin_V_40_fu_1587_p2  | -   |        | current_sin_V_40  | add | fabric | 0       |
+|   current_cos_V_41_fu_1592_p2  | -   |        | current_cos_V_41  | add | fabric | 0       |
+|   current_sin_V_41_fu_1597_p2  | -   |        | current_sin_V_41  | sub | fabric | 0       |
+|   current_cos_V_42_fu_1781_p2  | -   |        | current_cos_V_42  | add | fabric | 0       |
+|   current_sin_V_144_fu_1786_p2 | -   |        | current_sin_V_144 | sub | fabric | 0       |
+|   current_cos_V_43_fu_1792_p2  | -   |        | current_cos_V_43  | sub | fabric | 0       |
+|   current_sin_V_145_fu_1797_p2 | -   |        | current_sin_V_145 | add | fabric | 0       |
+|   current_cos_V_46_fu_1644_p2  | -   |        | current_cos_V_46  | sub | fabric | 0       |
+|   current_sin_V_46_fu_1650_p2  | -   |        | current_sin_V_46  | add | fabric | 0       |
+|   current_cos_V_47_fu_1656_p2  | -   |        | current_cos_V_47  | add | fabric | 0       |
+|   current_sin_V_47_fu_1662_p2  | -   |        | current_sin_V_47  | sub | fabric | 0       |
+|   current_cos_V_48_fu_1871_p2  | -   |        | current_cos_V_48  | add | fabric | 0       |
+|   current_sin_V_146_fu_1877_p2 | -   |        | current_sin_V_146 | sub | fabric | 0       |
+|   current_cos_V_49_fu_1883_p2  | -   |        | current_cos_V_49  | sub | fabric | 0       |
+|   current_sin_V_147_fu_1889_p2 | -   |        | current_sin_V_147 | add | fabric | 0       |
+|   current_cos_V_52_fu_1961_p2  | -   |        | current_cos_V_52  | sub | fabric | 0       |
+|   current_sin_V_52_fu_1966_p2  | -   |        | current_sin_V_52  | add | fabric | 0       |
+|   current_cos_V_53_fu_1971_p2  | -   |        | current_cos_V_53  | add | fabric | 0       |
+|   current_sin_V_53_fu_1976_p2  | -   |        | current_sin_V_53  | sub | fabric | 0       |
+|   current_cos_V_54_fu_2127_p2  | -   |        | current_cos_V_54  | add | fabric | 0       |
+|   current_sin_V_148_fu_2132_p2 | -   |        | current_sin_V_148 | sub | fabric | 0       |
+|   current_cos_V_55_fu_2137_p2  | -   |        | current_cos_V_55  | sub | fabric | 0       |
+|   current_sin_V_149_fu_2142_p2 | -   |        | current_sin_V_149 | add | fabric | 0       |
+|   current_cos_V_58_fu_2023_p2  | -   |        | current_cos_V_58  | sub | fabric | 0       |
+|   current_sin_V_58_fu_2029_p2  | -   |        | current_sin_V_58  | add | fabric | 0       |
+|   current_cos_V_59_fu_2035_p2  | -   |        | current_cos_V_59  | add | fabric | 0       |
+|   current_sin_V_59_fu_2041_p2  | -   |        | current_sin_V_59  | sub | fabric | 0       |
+|   current_cos_V_60_fu_2379_p2  | -   |        | current_cos_V_60  | add | fabric | 0       |
+|   current_sin_V_150_fu_2384_p2 | -   |        | current_sin_V_150 | sub | fabric | 0       |
+|   current_cos_V_61_fu_2390_p2  | -   |        | current_cos_V_61  | sub | fabric | 0       |
+|   current_sin_V_151_fu_2395_p2 | -   |        | current_sin_V_151 | add | fabric | 0       |
+|   current_sin_V_152_fu_2465_p2 | -   |        | current_sin_V_152 | sub | fabric | 0       |
+|   current_sin_V_153_fu_2471_p2 | -   |        | current_sin_V_153 | add | fabric | 0       |
+|   current_cos_V_63_fu_2170_p2  | -   |        | current_cos_V_63  | sub | fabric | 0       |
+|   current_sin_V_66_fu_2175_p2  | -   |        | current_sin_V_66  | add | fabric | 0       |
+|   current_cos_V_64_fu_2180_p2  | -   |        | current_cos_V_64  | add | fabric | 0       |
+|   current_sin_V_67_fu_2185_p2  | -   |        | current_sin_V_67  | sub | fabric | 0       |
+|   current_cos_V_66_fu_2258_p2  | -   |        | current_cos_V_66  | sub | fabric | 0       |
+|   current_sin_V_69_fu_2264_p2  | -   |        | current_sin_V_69  | add | fabric | 0       |
+|   current_cos_V_67_fu_2270_p2  | -   |        | current_cos_V_67  | add | fabric | 0       |
+|   current_sin_V_70_fu_2276_p2  | -   |        | current_sin_V_70  | sub | fabric | 0       |
+|   current_cos_V_69_fu_2541_p2  | -   |        | current_cos_V_69  | sub | fabric | 0       |
+|   current_sin_V_72_fu_2546_p2  | -   |        | current_sin_V_72  | add | fabric | 0       |
+|   current_cos_V_70_fu_2551_p2  | -   |        | current_cos_V_70  | add | fabric | 0       |
+|   current_sin_V_73_fu_2556_p2  | -   |        | current_sin_V_73  | sub | fabric | 0       |
+|   current_cos_V_72_fu_2605_p2  | -   |        | current_cos_V_72  | sub | fabric | 0       |
+|   current_sin_V_75_fu_2611_p2  | -   |        | current_sin_V_75  | add | fabric | 0       |
+|   current_cos_V_73_fu_2617_p2  | -   |        | current_cos_V_73  | add | fabric | 0       |
+|   current_sin_V_76_fu_2623_p2  | -   |        | current_sin_V_76  | sub | fabric | 0       |
+|   current_cos_V_75_fu_2707_p2  | -   |        | current_cos_V_75  | sub | fabric | 0       |
+|   current_sin_V_78_fu_2713_p2  | -   |        | current_sin_V_78  | add | fabric | 0       |
+|   current_cos_V_76_fu_2719_p2  | -   |        | current_cos_V_76  | add | fabric | 0       |
+|   current_sin_V_79_fu_2725_p2  | -   |        | current_sin_V_79  | sub | fabric | 0       |
+|   current_cos_V_78_fu_2795_p2  | -   |        | current_cos_V_78  | sub | fabric | 0       |
+|   current_sin_V_81_fu_2799_p2  | -   |        | current_sin_V_81  | add | fabric | 0       |
+|   current_cos_V_79_fu_2803_p2  | -   |        | current_cos_V_79  | add | fabric | 0       |
+|   current_sin_V_82_fu_2807_p2  | -   |        | current_sin_V_82  | sub | fabric | 0       |
+|   current_cos_V_81_fu_2857_p2  | -   |        | current_cos_V_81  | sub | fabric | 0       |
+|   current_sin_V_84_fu_2863_p2  | -   |        | current_sin_V_84  | add | fabric | 0       |
+|   current_cos_V_82_fu_2869_p2  | -   |        | current_cos_V_82  | add | fabric | 0       |
+|   current_sin_V_85_fu_2875_p2  | -   |        | current_sin_V_85  | sub | fabric | 0       |
+|   current_cos_V_84_fu_2938_p2  | -   |        | current_cos_V_84  | sub | fabric | 0       |
+|   current_sin_V_87_fu_2943_p2  | -   |        | current_sin_V_87  | add | fabric | 0       |
+|   current_cos_V_85_fu_2948_p2  | -   |        | current_cos_V_85  | add | fabric | 0       |
+|   current_sin_V_88_fu_2953_p2  | -   |        | current_sin_V_88  | sub | fabric | 0       |
+|   current_cos_V_87_fu_3004_p2  | -   |        | current_cos_V_87  | sub | fabric | 0       |
+|   current_sin_V_90_fu_3010_p2  | -   |        | current_sin_V_90  | add | fabric | 0       |
+|   current_cos_V_88_fu_3016_p2  | -   |        | current_cos_V_88  | add | fabric | 0       |
+|   current_sin_V_91_fu_3022_p2  | -   |        | current_sin_V_91  | sub | fabric | 0       |
+|   current_cos_V_90_fu_3070_p2  | -   |        | current_cos_V_90  | sub | fabric | 0       |
+|   current_sin_V_93_fu_3076_p2  | -   |        | current_sin_V_93  | add | fabric | 0       |
+|   current_cos_V_91_fu_3082_p2  | -   |        | current_cos_V_91  | add | fabric | 0       |
+|   current_sin_V_94_fu_3088_p2  | -   |        | current_sin_V_94  | sub | fabric | 0       |
+|   current_cos_V_93_fu_3140_p2  | -   |        | current_cos_V_93  | sub | fabric | 0       |
+|   current_sin_V_96_fu_3144_p2  | -   |        | current_sin_V_96  | add | fabric | 0       |
+|   current_cos_V_94_fu_3148_p2  | -   |        | current_cos_V_94  | add | fabric | 0       |
+|   current_sin_V_97_fu_3152_p2  | -   |        | current_sin_V_97  | sub | fabric | 0       |
+|   current_cos_V_96_fu_3202_p2  | -   |        | current_cos_V_96  | sub | fabric | 0       |
+|   current_sin_V_99_fu_3208_p2  | -   |        | current_sin_V_99  | add | fabric | 0       |
+|   current_cos_V_97_fu_3214_p2  | -   |        | current_cos_V_97  | add | fabric | 0       |
+|   current_sin_V_100_fu_3220_p2 | -   |        | current_sin_V_100 | sub | fabric | 0       |
+|   current_cos_V_99_fu_3270_p2  | -   |        | current_cos_V_99  | sub | fabric | 0       |
+|   current_sin_V_102_fu_3275_p2 | -   |        | current_sin_V_102 | add | fabric | 0       |
+|   current_cos_V_100_fu_3280_p2 | -   |        | current_cos_V_100 | add | fabric | 0       |
+|   current_sin_V_103_fu_3285_p2 | -   |        | current_sin_V_103 | sub | fabric | 0       |
+|   current_cos_V_102_fu_3336_p2 | -   |        | current_cos_V_102 | sub | fabric | 0       |
+|   current_sin_V_105_fu_3342_p2 | -   |        | current_sin_V_105 | add | fabric | 0       |
+|   current_cos_V_103_fu_3348_p2 | -   |        | current_cos_V_103 | add | fabric | 0       |
+|   current_sin_V_106_fu_3354_p2 | -   |        | current_sin_V_106 | sub | fabric | 0       |
+|   current_cos_V_105_fu_3402_p2 | -   |        | current_cos_V_105 | sub | fabric | 0       |
+|   current_sin_V_108_fu_3408_p2 | -   |        | current_sin_V_108 | add | fabric | 0       |
+|   current_cos_V_106_fu_3414_p2 | -   |        | current_cos_V_106 | add | fabric | 0       |
+|   current_sin_V_109_fu_3420_p2 | -   |        | current_sin_V_109 | sub | fabric | 0       |
+|   current_cos_V_108_fu_3472_p2 | -   |        | current_cos_V_108 | sub | fabric | 0       |
+|   current_sin_V_111_fu_3476_p2 | -   |        | current_sin_V_111 | add | fabric | 0       |
+|   current_cos_V_109_fu_3480_p2 | -   |        | current_cos_V_109 | add | fabric | 0       |
+|   current_sin_V_112_fu_3484_p2 | -   |        | current_sin_V_112 | sub | fabric | 0       |
+|   current_cos_V_111_fu_3534_p2 | -   |        | current_cos_V_111 | sub | fabric | 0       |
+|   current_sin_V_114_fu_3540_p2 | -   |        | current_sin_V_114 | add | fabric | 0       |
+|   current_cos_V_112_fu_3546_p2 | -   |        | current_cos_V_112 | add | fabric | 0       |
+|   current_sin_V_115_fu_3552_p2 | -   |        | current_sin_V_115 | sub | fabric | 0       |
+|   current_cos_V_114_fu_3602_p2 | -   |        | current_cos_V_114 | sub | fabric | 0       |
+|   current_sin_V_117_fu_3607_p2 | -   |        | current_sin_V_117 | add | fabric | 0       |
+|   current_cos_V_115_fu_3612_p2 | -   |        | current_cos_V_115 | add | fabric | 0       |
+|   current_sin_V_118_fu_3617_p2 | -   |        | current_sin_V_118 | sub | fabric | 0       |
+|   current_cos_V_117_fu_3668_p2 | -   |        | current_cos_V_117 | sub | fabric | 0       |
+|   current_sin_V_120_fu_3674_p2 | -   |        | current_sin_V_120 | add | fabric | 0       |
+|   current_cos_V_118_fu_3680_p2 | -   |        | current_cos_V_118 | add | fabric | 0       |
+|   current_sin_V_121_fu_3686_p2 | -   |        | current_sin_V_121 | sub | fabric | 0       |
+|   current_cos_V_120_fu_3734_p2 | -   |        | current_cos_V_120 | sub | fabric | 0       |
+|   current_sin_V_123_fu_3740_p2 | -   |        | current_sin_V_123 | add | fabric | 0       |
+|   current_cos_V_121_fu_3746_p2 | -   |        | current_cos_V_121 | add | fabric | 0       |
+|   current_sin_V_124_fu_3752_p2 | -   |        | current_sin_V_124 | sub | fabric | 0       |
+|   current_cos_V_123_fu_3804_p2 | -   |        | current_cos_V_123 | sub | fabric | 0       |
+|   current_sin_V_126_fu_3808_p2 | -   |        | current_sin_V_126 | add | fabric | 0       |
+|   current_cos_V_124_fu_3812_p2 | -   |        | current_cos_V_124 | add | fabric | 0       |
+|   current_sin_V_127_fu_3816_p2 | -   |        | current_sin_V_127 | sub | fabric | 0       |
+|   x_s_V_fu_3848_p2             | -   |        | x_s_V             | sub | fabric | 0       |
+|   x_s_V_1_fu_3868_p2           | -   |        | x_s_V_1           | add | fabric | 0       |
+|   x_s_V_2_fu_3937_p2           | -   |        | x_s_V_2           | sub | fabric | 0       |
+|   x_s_V_3_fu_3956_p2           | -   |        | x_s_V_3           | add | fabric | 0       |
+|   x_s_V_4_fu_3978_p2           | -   |        | x_s_V_4           | add | fabric | 0       |
+|   x_s_V_5_fu_4049_p2           | -   |        | x_s_V_5           | add | fabric | 0       |
+|   x_s_V_6_fu_4070_p2           | -   |        | x_s_V_6           | add | fabric | 0       |
+|   y_s_V_fu_3898_p2             | -   |        | y_s_V             | sub | fabric | 0       |
+|   y_s_V_1_fu_3918_p2           | -   |        | y_s_V_1           | add | fabric | 0       |
+|   y_s_V_2_fu_3987_p2           | -   |        | y_s_V_2           | sub | fabric | 0       |
+|   y_s_V_3_fu_4006_p2           | -   |        | y_s_V_3           | add | fabric | 0       |
+|   y_s_V_4_fu_4028_p2           | -   |        | y_s_V_4           | add | fabric | 0       |
+|   y_s_V_5_fu_4091_p2           | -   |        | y_s_V_5           | add | fabric | 0       |
+|   y_s_V_6_fu_4112_p2           | -   |        | y_s_V_6           | add | fabric | 0       |
+|   add_ln1697_25_fu_1439_p2     | -   |        | add_ln1697_25     | add | fabric | 0       |
+|   add_ln1697_26_fu_1449_p2     | -   |        | add_ln1697_26     | add | fabric | 0       |
+|   add_ln1697_28_fu_2115_p2     | -   |        | add_ln1697_28     | add | fabric | 0       |
+|   add_ln1697_30_fu_2634_p2     | -   |        | add_ln1697_30     | add | fabric | 0       |
+|   add_ln1697_31_fu_2644_p2     | -   |        | add_ln1697_31     | add | fabric | 0       |
++--------------------------------+-----+--------+-------------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------------------------------+---------------------------------+
+| Type      | Options                                             | Location                        |
++-----------+-----------------------------------------------------+---------------------------------+
+| interface | s_axilite port=return bundle=HLS_TREEADD_PERIPH_BUS | cordic.cpp:13 in cordic, return |
+| interface | s_axilite port=state bundle=HLS_TREEADD_PERIPH_BUS  | cordic.cpp:14 in cordic, state  |
+| interface | s_axilite port=theta bundle=HLS_TREEADD_PERIPH_BUS  | cordic.cpp:15 in cordic, theta  |
+| interface | s_axilite port=x bundle=HLS_TREEADD_PERIPH_BUS      | cordic.cpp:16 in cordic, x      |
+| interface | s_axilite port=y bundle=HLS_TREEADD_PERIPH_BUS      | cordic.cpp:17 in cordic, y      |
+| interface | s_axilite port=s bundle=HLS_TREEADD_PERIPH_BUS      | cordic.cpp:18 in cordic, s      |
+| interface | s_axilite port=c bundle=HLS_TREEADD_PERIPH_BUS      | cordic.cpp:19 in cordic, c      |
+| interface | s_axilite port=t bundle=HLS_TREEADD_PERIPH_BUS      | cordic.cpp:20 in cordic, t      |
+| pipeline  | II=1                                                | cordic.cpp:39 in cordic         |
++-----------+-----------------------------------------------------+---------------------------------+
+
+

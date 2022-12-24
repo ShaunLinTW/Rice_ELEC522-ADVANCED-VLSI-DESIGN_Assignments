@@ -1,0 +1,33 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../cordic-top.cpp in debug mode
+   Generating csim.exe
+degree=-90, radian=-1.570801, cos=-0.002686, sin=-0.996826
+degree=-75, radian=-1.309082, cos=0.260010, sin=-0.964355
+degree=-60, radian=-1.047241, cos=0.497437, sin=-0.864624
+degree=-45, radian=-0.785400, cos=0.706787, sin=-0.706177
+degree=-30, radian=-0.523682, cos=0.865356, sin=-0.499634
+degree=-15, radian=-0.261841, cos=0.962280, sin=-0.259277
+degree=0, radian=0.000000, cos=0.999390, sin=-0.000732
+degree=15, radian=0.261719, cos=0.964111, sin=0.258789
+degree=30, radian=0.523560, cos=0.864136, sin=0.499146
+degree=45, radian=0.785278, cos=0.705688, sin=0.705688
+degree=60, radian=1.047119, cos=0.498901, sin=0.864258
+degree=75, radian=1.308960, cos=0.258301, sin=0.964111
+degree=90, radian=1.570679, cos=-0.000854, sin=0.996582
+Total_Error_Sin=inf, Total_error_Cos=-59359.876559, 
+x_in=0.000000, y_in=-1.000000, t_theta=-1.570312
+x_in=0.258789, y_in=-0.965942, t_theta=-1.309082
+x_in=0.500000, y_in=-0.866089, t_theta=-1.047119
+x_in=0.706909, y_in=-0.707031, t_theta=-0.785156
+x_in=0.865967, y_in=-0.500000, t_theta=-0.523438
+x_in=0.965820, y_in=-0.258911, t_theta=-0.261475
+x_in=1, y_in=0, t_theta=0.000244
+x_in=0.965820, y_in=0.258789, t_theta=0.261475
+x_in=0.865967, y_in=0.500000, t_theta=0.523438
+x_in=0.706909, y_in=0.706909, t_theta=0.785156
+x_in=0.500000, y_in=0.865967, t_theta=1.047119
+x_in=0.258789, y_in=0.965820, t_theta=1.309082
+x_in=0.000000, y_in=1.000000, t_theta=1.570312
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

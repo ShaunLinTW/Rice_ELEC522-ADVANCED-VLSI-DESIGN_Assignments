@@ -1,0 +1,101 @@
+degree=0, radian=0.000000, cos=0.999390, sin=-0.000732
+degree=15, radian=0.261719, cos=0.964111, sin=0.258789
+degree=30, radian=0.523560, cos=0.864136, sin=0.499146
+degree=45, radian=0.785278, cos=0.705688, sin=0.705688
+degree=60, radian=1.047119, cos=0.498901, sin=0.864258
+degree=75, radian=1.308960, cos=0.258301, sin=0.964111
+degree=90, radian=1.570679, cos=-0.000854, sin=0.996582
+Total_Error_Sin=inf, Total_error_Cos=827.642365, 
+x_in=1, y_in=1, t_theta=0.785156
+x_in=2, y_in=1, t_theta=0.463379
+x_in=3, y_in=1, t_theta=0.324707
+x_in=1, y_in=2, t_theta=1.107178
+x_in=2, y_in=2, t_theta=1.741699
+x_in=3, y_in=2, t_theta=-0.171143
+x_in=1, y_in=3, t_theta=1.251953
+x_in=2, y_in=3, t_theta=1.741699
+x_in=3, y_in=3, t_theta=1.741699
+
+C:\ELEC522\jag33\proj3\cordic\solution1\sim\verilog>set PATH= 
+
+C:\ELEC522\jag33\proj3\cordic\solution1\sim\verilog>call C:/Xilinx/Vivado/2022.1/bin/xelab xil_defaultlib.apatb_cordic_top glbl -Oenable_linking_all_libraries  -prj cordic.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib "ieee_proposed=./ieee_proposed" -s cordic  
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_cordic_top glbl -Oenable_linking_all_libraries -prj cordic.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s cordic 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/jag33/proj3/cordic/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/jag33/proj3/cordic/solution1/sim/verilog/cordic.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_cordic_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/jag33/proj3/cordic/solution1/sim/verilog/cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/jag33/proj3/cordic/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.cordic
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_cordic_top
+Compiling module work.glbl
+Built simulation snapshot cordic
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/cordic/xsim_script.tcl
+# xsim {cordic} -autoloadwcfg -tclbatch {cordic.tcl}
+Time resolution is 1 ps
+source cordic.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 16 [0.00%] @ "125000"
+// RTL Simulation : 1 / 16 [95.83%] @ "385000"
+// RTL Simulation : 2 / 16 [95.83%] @ "395000"
+// RTL Simulation : 3 / 16 [95.83%] @ "405000"
+// RTL Simulation : 4 / 16 [95.83%] @ "415000"
+// RTL Simulation : 5 / 16 [95.83%] @ "425000"
+// RTL Simulation : 6 / 16 [95.83%] @ "435000"
+// RTL Simulation : 7 / 16 [95.83%] @ "445000"
+// RTL Simulation : 8 / 16 [95.83%] @ "455000"
+// RTL Simulation : 9 / 16 [95.83%] @ "465000"
+// RTL Simulation : 10 / 16 [95.83%] @ "475000"
+// RTL Simulation : 11 / 16 [95.83%] @ "485000"
+// RTL Simulation : 12 / 16 [95.83%] @ "495000"
+// RTL Simulation : 13 / 16 [95.83%] @ "505000"
+// RTL Simulation : 14 / 16 [95.83%] @ "515000"
+// RTL Simulation : 15 / 16 [95.83%] @ "525000"
+// RTL Simulation : 16 / 16 [100.00%] @ "535000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 595 ns : File "C:/ELEC522/jag33/proj3/cordic/solution1/sim/verilog/cordic.autotb.v" Line 583
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 11 15:43:44 2022...
+degree=0, radian=0.000000, cos=0.999390, sin=-0.000732
+degree=15, radian=0.261719, cos=0.964111, sin=0.258789
+degree=30, radian=0.523560, cos=0.864136, sin=0.499146
+degree=45, radian=0.785278, cos=0.705688, sin=0.705688
+degree=60, radian=1.047119, cos=0.498901, sin=0.864258
+degree=75, radian=1.308960, cos=0.258301, sin=0.964111
+degree=90, radian=1.570679, cos=-0.000854, sin=0.996582
+Total_Error_Sin=inf, Total_error_Cos=827.642365, 
+x_in=1, y_in=1, t_theta=0.785156
+x_in=2, y_in=1, t_theta=0.463379
+x_in=3, y_in=1, t_theta=0.324707
+x_in=1, y_in=2, t_theta=1.107178
+x_in=2, y_in=2, t_theta=1.741699
+x_in=3, y_in=2, t_theta=-0.171143
+x_in=1, y_in=3, t_theta=1.251953
+x_in=2, y_in=3, t_theta=1.741699
+x_in=3, y_in=3, t_theta=1.741699
