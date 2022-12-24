@@ -1,0 +1,344 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation34/Vitis HLS1'
+Error 0002: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation35/Vitis HLS1'
+Error 0003: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation36/Vitis HLS1'
+Error 0004: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation37/Vitis HLS1'
+Error 0005: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation38/Vitis HLS1'
+Error 0006: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation39/Vitis HLS1'
+Error 0007: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation40/Vitis HLS1'
+Error 0008: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation41/Vitis HLS1'
+Error 0009: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation42/Vitis HLS1'
+Error 0010: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation43/Vitis HLS1'
+Error 0011: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation44/Vitis HLS1'
+Error 0012: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation45/Vitis HLS1'
+Error 0013: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation46/Vitis HLS1'
+Error 0014: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation47/Vitis HLS1'
+Error 0015: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation48/Vitis HLS1'
+Error 0016: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation49/Vitis HLS1'
+Error 0017: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation50/Vitis HLS1'
+Error 0018: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Rotation51/Vitis HLS1'
+Error 0019: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Vectoring12/Vitis HLS2'
+Error 0020: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Vectoring14/Vitis HLS2'
+Error 0021: "C:\ELEC522\jz118\HLS\cordic\solution1" directory specifi...
+     Block: 'CORDIC_SAP/Vectoring15/Vitis HLS2'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation34/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation35/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation36/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation37/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation38/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation39/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation40/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation41/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation42/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation43/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation44/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation45/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation46/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation47/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation48/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation49/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation50/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Rotation51/Vitis HLS1'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Vectoring12/Vitis HLS2'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Vectoring14/Vitis HLS2'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'CORDIC_SAP/Vectoring15/Vitis HLS2'
+
+Details:
+"C:\ELEC522\jz118\HLS\cordic\solution1" directory specified in
+"Solution" parameter does not contain System Generator package
+created by Vitis HLS. To create System Generator package from
+Vitis HLS project select "Export RTL" for "System Generator for DSP".
+Error occurred during "Block Configuration".
+
+--------------------------------------------------------------------------------
