@@ -1,0 +1,274 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cordic'
+================================================================
++ General Information: 
+    * Date:           Mon Nov 21 12:35:43 2022
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        cordic_raw
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |  Modules | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |            |     |
+    |  & Loops | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |+ cordic  |     -|  0.21|       20|  200.000|         -|        1|     -|       yes|     -|   -|  1369 (1%)|  9032 (16%)|    -|
+    +----------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-------------+---------+----------+
+| Interface   | Mode    | Bitwidth |
++-------------+---------+----------+
+| final_x     | ap_none | 16       |
+| final_y     | ap_none | 16       |
+| initial_x   | ap_none | 16       |
+| initial_y   | ap_none | 16       |
+| mode        | ap_none | 1        |
+| mode0_theta | ap_none | 16       |
+| mode1_theta | ap_none | 16       |
++-------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+-------------------------------------+
+| Argument    | Direction | Datatype                            |
++-------------+-----------+-------------------------------------+
+| initial_x   | in        | ap_fixed<16, 4, AP_RND, AP_SAT, 0>  |
+| initial_y   | in        | ap_fixed<16, 4, AP_RND, AP_SAT, 0>  |
+| final_x     | out       | ap_fixed<16, 4, AP_RND, AP_SAT, 0>* |
+| final_y     | out       | ap_fixed<16, 4, AP_RND, AP_SAT, 0>* |
+| mode        | in        | bool                                |
+| mode0_theta | in        | ap_fixed<16, 4, AP_RND, AP_SAT, 0>  |
+| mode1_theta | out       | ap_fixed<16, 4, AP_RND, AP_SAT, 0>* |
++-------------+-----------+-------------------------------------+
+
+* SW-to-HW Mapping
++-------------+--------------------+---------+
+| Argument    | HW Interface       | HW Type |
++-------------+--------------------+---------+
+| initial_x   | initial_x          | port    |
+| initial_y   | initial_y          | port    |
+| final_x     | final_x            | port    |
+| final_x     | final_x_ap_vld     | port    |
+| final_y     | final_y            | port    |
+| final_y     | final_y_ap_vld     | port    |
+| mode        | mode               | port    |
+| mode0_theta | mode0_theta        | port    |
+| mode1_theta | mode1_theta        | port    |
+| mode1_theta | mode1_theta_ap_vld | port    |
++-------------+--------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+------------+-----+--------+---------+
+| Name                    | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++-------------------------+-----+--------+------------+-----+--------+---------+
+| + cordic                | 0   |        |            |     |        |         |
+|   r_V_fu_299_p2         | -   |        | r_V        | sub | fabric | 0       |
+|   p_Val2_2_fu_343_p2    | -   |        | p_Val2_2   | sub | fabric | 0       |
+|   r_V_1_fu_377_p2       | -   |        | r_V_1      | sub | fabric | 0       |
+|   r_V_2_fu_455_p2       | -   |        | r_V_2      | sub | fabric | 0       |
+|   r_V_3_fu_519_p2       | -   |        | r_V_3      | sub | fabric | 0       |
+|   ret_V_fu_748_p2       | -   |        | ret_V      | sub | fabric | 0       |
+|   ret_V_1_fu_808_p2     | -   |        | ret_V_1    | add | fabric | 0       |
+|   y_V_90_fu_822_p2      | -   |        | y_V_90     | add | fabric | 0       |
+|   ret_V_2_fu_872_p2     | -   |        | ret_V_2    | add | fabric | 0       |
+|   theta_V_1_fu_886_p2   | -   |        | theta_V_1  | add | fabric | 0       |
+|   ret_V_3_fu_918_p2     | -   |        | ret_V_3    | sub | fabric | 0       |
+|   ret_V_4_fu_978_p2     | -   |        | ret_V_4    | add | fabric | 0       |
+|   theta_V_2_fu_992_p2   | -   |        | theta_V_2  | add | fabric | 0       |
+|   ret_V_5_fu_1182_p2    | -   |        | ret_V_5    | sub | fabric | 0       |
+|   ret_V_6_fu_1250_p2    | -   |        | ret_V_6    | add | fabric | 0       |
+|   y_V_94_fu_1264_p2     | -   |        | y_V_94     | add | fabric | 0       |
+|   ret_V_7_fu_1315_p2    | -   |        | ret_V_7    | add | fabric | 0       |
+|   theta_V_4_fu_1329_p2  | -   |        | theta_V_4  | add | fabric | 0       |
+|   ret_V_8_fu_1360_p2    | -   |        | ret_V_8    | add | fabric | 0       |
+|   x_V_96_fu_1374_p2     | -   |        | x_V_96     | add | fabric | 0       |
+|   ret_V_9_fu_1422_p2    | -   |        | ret_V_9    | sub | fabric | 0       |
+|   ret_V_10_fu_1482_p2   | -   |        | ret_V_10   | add | fabric | 0       |
+|   theta_V_5_fu_1496_p2  | -   |        | theta_V_5  | add | fabric | 0       |
+|   ret_V_11_fu_1685_p2   | -   |        | ret_V_11   | sub | fabric | 0       |
+|   ret_V_12_fu_1751_p2   | -   |        | ret_V_12   | add | fabric | 0       |
+|   y_V_97_fu_1765_p2     | -   |        | y_V_97     | add | fabric | 0       |
+|   ret_V_13_fu_1815_p2   | -   |        | ret_V_13   | add | fabric | 0       |
+|   theta_V_7_fu_1829_p2  | -   |        | theta_V_7  | add | fabric | 0       |
+|   ret_V_14_fu_1860_p2   | -   |        | ret_V_14   | add | fabric | 0       |
+|   x_V_99_fu_1874_p2     | -   |        | x_V_99     | add | fabric | 0       |
+|   ret_V_15_fu_1921_p2   | -   |        | ret_V_15   | sub | fabric | 0       |
+|   ret_V_16_fu_1981_p2   | -   |        | ret_V_16   | add | fabric | 0       |
+|   theta_V_8_fu_1995_p2  | -   |        | theta_V_8  | add | fabric | 0       |
+|   ret_V_17_fu_2184_p2   | -   |        | ret_V_17   | sub | fabric | 0       |
+|   ret_V_18_fu_2250_p2   | -   |        | ret_V_18   | add | fabric | 0       |
+|   y_V_100_fu_2264_p2    | -   |        | y_V_100    | add | fabric | 0       |
+|   ret_V_19_fu_2314_p2   | -   |        | ret_V_19   | add | fabric | 0       |
+|   theta_V_10_fu_2328_p2 | -   |        | theta_V_10 | add | fabric | 0       |
+|   ret_V_20_fu_2359_p2   | -   |        | ret_V_20   | add | fabric | 0       |
+|   x_V_102_fu_2373_p2    | -   |        | x_V_102    | add | fabric | 0       |
+|   ret_V_21_fu_2420_p2   | -   |        | ret_V_21   | sub | fabric | 0       |
+|   ret_V_22_fu_2480_p2   | -   |        | ret_V_22   | add | fabric | 0       |
+|   theta_V_11_fu_2494_p2 | -   |        | theta_V_11 | add | fabric | 0       |
+|   ret_V_23_fu_2683_p2   | -   |        | ret_V_23   | sub | fabric | 0       |
+|   ret_V_24_fu_2749_p2   | -   |        | ret_V_24   | add | fabric | 0       |
+|   y_V_103_fu_2763_p2    | -   |        | y_V_103    | add | fabric | 0       |
+|   ret_V_25_fu_2813_p2   | -   |        | ret_V_25   | add | fabric | 0       |
+|   theta_V_13_fu_2827_p2 | -   |        | theta_V_13 | add | fabric | 0       |
+|   ret_V_26_fu_2858_p2   | -   |        | ret_V_26   | add | fabric | 0       |
+|   x_V_105_fu_2872_p2    | -   |        | x_V_105    | add | fabric | 0       |
+|   ret_V_27_fu_2919_p2   | -   |        | ret_V_27   | sub | fabric | 0       |
+|   ret_V_28_fu_2979_p2   | -   |        | ret_V_28   | add | fabric | 0       |
+|   theta_V_14_fu_2993_p2 | -   |        | theta_V_14 | add | fabric | 0       |
+|   ret_V_29_fu_3182_p2   | -   |        | ret_V_29   | sub | fabric | 0       |
+|   ret_V_30_fu_3248_p2   | -   |        | ret_V_30   | add | fabric | 0       |
+|   y_V_106_fu_3262_p2    | -   |        | y_V_106    | add | fabric | 0       |
+|   ret_V_31_fu_3312_p2   | -   |        | ret_V_31   | add | fabric | 0       |
+|   theta_V_16_fu_3326_p2 | -   |        | theta_V_16 | add | fabric | 0       |
+|   ret_V_32_fu_3357_p2   | -   |        | ret_V_32   | add | fabric | 0       |
+|   x_V_108_fu_3371_p2    | -   |        | x_V_108    | add | fabric | 0       |
+|   ret_V_33_fu_3418_p2   | -   |        | ret_V_33   | sub | fabric | 0       |
+|   ret_V_34_fu_3478_p2   | -   |        | ret_V_34   | add | fabric | 0       |
+|   theta_V_17_fu_3492_p2 | -   |        | theta_V_17 | add | fabric | 0       |
+|   ret_V_35_fu_3681_p2   | -   |        | ret_V_35   | sub | fabric | 0       |
+|   ret_V_36_fu_3747_p2   | -   |        | ret_V_36   | add | fabric | 0       |
+|   y_V_109_fu_3761_p2    | -   |        | y_V_109    | add | fabric | 0       |
+|   ret_V_37_fu_3811_p2   | -   |        | ret_V_37   | add | fabric | 0       |
+|   theta_V_19_fu_3825_p2 | -   |        | theta_V_19 | add | fabric | 0       |
+|   ret_V_38_fu_3856_p2   | -   |        | ret_V_38   | add | fabric | 0       |
+|   x_V_111_fu_3870_p2    | -   |        | x_V_111    | add | fabric | 0       |
+|   ret_V_39_fu_3917_p2   | -   |        | ret_V_39   | sub | fabric | 0       |
+|   ret_V_40_fu_3977_p2   | -   |        | ret_V_40   | add | fabric | 0       |
+|   theta_V_20_fu_3991_p2 | -   |        | theta_V_20 | add | fabric | 0       |
+|   ret_V_41_fu_4180_p2   | -   |        | ret_V_41   | sub | fabric | 0       |
+|   ret_V_42_fu_4246_p2   | -   |        | ret_V_42   | add | fabric | 0       |
+|   y_V_112_fu_4260_p2    | -   |        | y_V_112    | add | fabric | 0       |
+|   ret_V_43_fu_4310_p2   | -   |        | ret_V_43   | add | fabric | 0       |
+|   theta_V_22_fu_4324_p2 | -   |        | theta_V_22 | add | fabric | 0       |
+|   ret_V_44_fu_4355_p2   | -   |        | ret_V_44   | add | fabric | 0       |
+|   x_V_114_fu_4369_p2    | -   |        | x_V_114    | add | fabric | 0       |
+|   ret_V_45_fu_4416_p2   | -   |        | ret_V_45   | sub | fabric | 0       |
+|   ret_V_46_fu_4476_p2   | -   |        | ret_V_46   | add | fabric | 0       |
+|   theta_V_23_fu_4490_p2 | -   |        | theta_V_23 | add | fabric | 0       |
+|   ret_V_47_fu_4679_p2   | -   |        | ret_V_47   | sub | fabric | 0       |
+|   ret_V_48_fu_4745_p2   | -   |        | ret_V_48   | add | fabric | 0       |
+|   y_V_115_fu_4759_p2    | -   |        | y_V_115    | add | fabric | 0       |
+|   ret_V_49_fu_4809_p2   | -   |        | ret_V_49   | add | fabric | 0       |
+|   theta_V_25_fu_4823_p2 | -   |        | theta_V_25 | add | fabric | 0       |
+|   ret_V_50_fu_4854_p2   | -   |        | ret_V_50   | add | fabric | 0       |
+|   x_V_117_fu_4868_p2    | -   |        | x_V_117    | add | fabric | 0       |
+|   ret_V_51_fu_4915_p2   | -   |        | ret_V_51   | sub | fabric | 0       |
+|   ret_V_52_fu_4975_p2   | -   |        | ret_V_52   | add | fabric | 0       |
+|   theta_V_26_fu_4989_p2 | -   |        | theta_V_26 | add | fabric | 0       |
+|   ret_V_53_fu_5178_p2   | -   |        | ret_V_53   | sub | fabric | 0       |
+|   ret_V_54_fu_5244_p2   | -   |        | ret_V_54   | add | fabric | 0       |
+|   y_V_118_fu_5258_p2    | -   |        | y_V_118    | add | fabric | 0       |
+|   ret_V_55_fu_5308_p2   | -   |        | ret_V_55   | add | fabric | 0       |
+|   theta_V_28_fu_5322_p2 | -   |        | theta_V_28 | add | fabric | 0       |
+|   ret_V_56_fu_5353_p2   | -   |        | ret_V_56   | add | fabric | 0       |
+|   x_V_120_fu_5367_p2    | -   |        | x_V_120    | add | fabric | 0       |
+|   ret_V_57_fu_5414_p2   | -   |        | ret_V_57   | sub | fabric | 0       |
+|   ret_V_58_fu_5474_p2   | -   |        | ret_V_58   | add | fabric | 0       |
+|   theta_V_29_fu_5488_p2 | -   |        | theta_V_29 | add | fabric | 0       |
+|   ret_V_59_fu_5677_p2   | -   |        | ret_V_59   | sub | fabric | 0       |
+|   ret_V_60_fu_5743_p2   | -   |        | ret_V_60   | add | fabric | 0       |
+|   y_V_121_fu_5757_p2    | -   |        | y_V_121    | add | fabric | 0       |
+|   ret_V_61_fu_5807_p2   | -   |        | ret_V_61   | add | fabric | 0       |
+|   theta_V_31_fu_5821_p2 | -   |        | theta_V_31 | add | fabric | 0       |
+|   ret_V_62_fu_5852_p2   | -   |        | ret_V_62   | add | fabric | 0       |
+|   x_V_123_fu_5866_p2    | -   |        | x_V_123    | add | fabric | 0       |
+|   ret_V_63_fu_5913_p2   | -   |        | ret_V_63   | sub | fabric | 0       |
+|   ret_V_64_fu_5973_p2   | -   |        | ret_V_64   | add | fabric | 0       |
+|   theta_V_32_fu_5987_p2 | -   |        | theta_V_32 | add | fabric | 0       |
+|   ret_V_65_fu_6176_p2   | -   |        | ret_V_65   | sub | fabric | 0       |
+|   ret_V_66_fu_6242_p2   | -   |        | ret_V_66   | add | fabric | 0       |
+|   y_V_124_fu_6256_p2    | -   |        | y_V_124    | add | fabric | 0       |
+|   ret_V_67_fu_6306_p2   | -   |        | ret_V_67   | add | fabric | 0       |
+|   theta_V_34_fu_6320_p2 | -   |        | theta_V_34 | add | fabric | 0       |
+|   ret_V_68_fu_6351_p2   | -   |        | ret_V_68   | add | fabric | 0       |
+|   x_V_126_fu_6365_p2    | -   |        | x_V_126    | add | fabric | 0       |
+|   ret_V_69_fu_6412_p2   | -   |        | ret_V_69   | sub | fabric | 0       |
+|   ret_V_70_fu_6472_p2   | -   |        | ret_V_70   | add | fabric | 0       |
+|   theta_V_35_fu_6486_p2 | -   |        | theta_V_35 | add | fabric | 0       |
+|   ret_V_71_fu_6675_p2   | -   |        | ret_V_71   | sub | fabric | 0       |
+|   ret_V_72_fu_6741_p2   | -   |        | ret_V_72   | add | fabric | 0       |
+|   y_V_127_fu_6755_p2    | -   |        | y_V_127    | add | fabric | 0       |
+|   ret_V_73_fu_6805_p2   | -   |        | ret_V_73   | add | fabric | 0       |
+|   theta_V_37_fu_6819_p2 | -   |        | theta_V_37 | add | fabric | 0       |
+|   ret_V_74_fu_6850_p2   | -   |        | ret_V_74   | add | fabric | 0       |
+|   x_V_129_fu_6864_p2    | -   |        | x_V_129    | add | fabric | 0       |
+|   ret_V_75_fu_6911_p2   | -   |        | ret_V_75   | sub | fabric | 0       |
+|   ret_V_76_fu_6971_p2   | -   |        | ret_V_76   | add | fabric | 0       |
+|   theta_V_38_fu_6985_p2 | -   |        | theta_V_38 | add | fabric | 0       |
+|   ret_V_77_fu_7182_p2   | -   |        | ret_V_77   | sub | fabric | 0       |
+|   ret_V_78_fu_7248_p2   | -   |        | ret_V_78   | add | fabric | 0       |
+|   y_V_130_fu_7262_p2    | -   |        | y_V_130    | add | fabric | 0       |
+|   ret_V_79_fu_7309_p2   | -   |        | ret_V_79   | add | fabric | 0       |
+|   x_V_132_fu_7323_p2    | -   |        | x_V_132    | add | fabric | 0       |
+|   ret_V_80_fu_7370_p2   | -   |        | ret_V_80   | sub | fabric | 0       |
+|   ret_V_81_fu_7494_p2   | -   |        | ret_V_81   | sub | fabric | 0       |
+|   ret_V_82_fu_7560_p2   | -   |        | ret_V_82   | add | fabric | 0       |
+|   y_V_133_fu_7574_p2    | -   |        | y_V_133    | add | fabric | 0       |
+|   ret_V_83_fu_7621_p2   | -   |        | ret_V_83   | add | fabric | 0       |
+|   x_V_135_fu_7635_p2    | -   |        | x_V_135    | add | fabric | 0       |
+|   ret_V_84_fu_7682_p2   | -   |        | ret_V_84   | sub | fabric | 0       |
+|   ret_V_85_fu_7800_p2   | -   |        | ret_V_85   | sub | fabric | 0       |
+|   ret_V_86_fu_7877_p2   | -   |        | ret_V_86   | add | fabric | 0       |
+|   y_V_136_fu_7891_p2    | -   |        | y_V_136    | add | fabric | 0       |
+|   ret_V_87_fu_7945_p2   | -   |        | ret_V_87   | add | fabric | 0       |
+|   x_V_138_fu_7959_p2    | -   |        | x_V_138    | add | fabric | 0       |
+|   ret_V_88_fu_8006_p2   | -   |        | ret_V_88   | sub | fabric | 0       |
+|   ret_V_89_fu_8106_p2   | -   |        | ret_V_89   | sub | fabric | 0       |
+|   ret_V_90_fu_8172_p2   | -   |        | ret_V_90   | sub | fabric | 0       |
+|   ret_V_91_fu_8254_p2   | -   |        | ret_V_91   | add | fabric | 0       |
+|   x_V_142_fu_8268_p2    | -   |        | x_V_142    | add | fabric | 0       |
+|   ret_V_92_fu_8304_p2   | -   |        | ret_V_92   | add | fabric | 0       |
+|   y_V_141_fu_8318_p2    | -   |        | y_V_141    | add | fabric | 0       |
+|   ret_V_93_fu_8408_p2   | -   |        | ret_V_93   | sub | fabric | 0       |
+|   ret_V_94_fu_8486_p2   | -   |        | ret_V_94   | sub | fabric | 0       |
+|   ret_V_95_fu_8568_p2   | -   |        | ret_V_95   | add | fabric | 0       |
+|   x_V_146_fu_8582_p2    | -   |        | x_V_146    | add | fabric | 0       |
+|   ret_V_96_fu_8652_p2   | -   |        | ret_V_96   | add | fabric | 0       |
+|   y_V_145_fu_8666_p2    | -   |        | y_V_145    | add | fabric | 0       |
++-------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------------+----------------------------------------+
+| Type     | Options       | Location                               |
++----------+---------------+----------------------------------------+
+| pipeline | II=1          | ../fpga_hls_raw/cordic.cpp:4 in cordic |
+| latency  | MIN=20 MAX=20 | ../fpga_hls_raw/cordic.cpp:5 in cordic |
++----------+---------------+----------------------------------------+
+
+

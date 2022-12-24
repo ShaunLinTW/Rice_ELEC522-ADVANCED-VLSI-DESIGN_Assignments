@@ -1,0 +1,481 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../fpga_hls_raw/cordic.cpp in debug mode
+   Generating csim.exe
+CORDIC core results for sin/cos:
+cos(1.5708) = -0.000732422
+sin(1.5708) = -0.997803
+Software results for sin/cos:
+cos(1.5708) = -4.45446e-006
+sin(1.5708) = -1
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(1.30908) = 0.258057
+sin(1.30908) = -0.964111
+Software results for sin/cos:
+cos(1.30908) = 0.258737
+sin(1.30908) = -0.965948
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(1.04712) = 0.499512
+sin(1.04712) = -0.864014
+Software results for sin/cos:
+cos(1.04712) = 0.500068
+sin(1.04712) = -0.865986
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0.7854) = 0.705811
+sin(0.7854) = -0.705811
+Software results for sin/cos:
+cos(0.7854) = 0.707105
+sin(0.7854) = -0.707108
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0.523682) = 0.864502
+sin(0.523682) = -0.499023
+Software results for sin/cos:
+cos(0.523682) = 0.865984
+sin(0.523682) = -0.500072
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0.261719) = 0.963379
+sin(0.261719) = -0.257812
+Software results for sin/cos:
+cos(0.261719) = 0.965947
+sin(0.261719) = -0.258741
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0) = 0.998291
+sin(0) = 0
+Software results for sin/cos:
+cos(0) = 1
+sin(0) = 0
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-1.5708) = -0.000488281
+sin(-1.5708) = 0.998291
+Software results for sin/cos:
+cos(-1.5708) = -4.45446e-006
+sin(-1.5708) = 1
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-1.30908) = 0.257568
+sin(-1.30908) = 0.964111
+Software results for sin/cos:
+cos(-1.30908) = 0.258737
+sin(-1.30908) = 0.965948
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-1.04712) = 0.498779
+sin(-1.04712) = 0.864258
+Software results for sin/cos:
+cos(-1.04712) = 0.500068
+sin(-1.04712) = 0.865986
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-0.7854) = 0.705811
+sin(-0.7854) = 0.705322
+Software results for sin/cos:
+cos(-0.7854) = 0.707105
+sin(-0.7854) = 0.707108
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-0.523682) = 0.864258
+sin(-0.523682) = 0.498779
+Software results for sin/cos:
+cos(-0.523682) = 0.865984
+sin(-0.523682) = 0.500072
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-0.261719) = 0.963867
+sin(-0.261719) = 0.258301
+Software results for sin/cos:
+cos(-0.261719) = 0.965947
+sin(-0.261719) = 0.258741
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(1.5708) = 0.498779
+sin(1.5708) = 0.499023
+Software results for sin/cos:
+cos(1.5708) = 0.500002
+sin(1.5708) = 0.499998
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(1.30908) = 0.0319824
+sin(1.30908) = 0.266602
+Software results for sin/cos:
+cos(1.30908) = 0.0320049
+sin(1.30908) = 0.267386
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(1.04712) = -0.645508
+sin(1.04712) = 1.12524
+Software results for sin/cos:
+cos(1.04712) = -0.64673
+sin(1.04712) = 1.12778
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0.7854) = 0.776855
+sin(0.7854) = -0.493896
+Software results for sin/cos:
+cos(0.7854) = 0.777713
+sin(0.7854) = -0.494942
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0.523682) = 0.342773
+sin(0.523682) = -1.00464
+Software results for sin/cos:
+cos(0.523682) = 0.342804
+sin(0.523682) = -1.00623
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0.261719) = 0.120361
+sin(0.261719) = -1.47827
+Software results for sin/cos:
+cos(0.261719) = 0.120761
+sin(0.261719) = -1.4816
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(0) = -0.898926
+sin(0) = -0.199219
+Software results for sin/cos:
+cos(0) = -0.899902
+sin(0) = -0.199951
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-1.5708) = 1.19727
+sin(-1.5708) = -0.0998535
+Software results for sin/cos:
+cos(-1.5708) = 1.19995
+sin(-1.5708) = -0.100092
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-1.30908) = 0.257568
+sin(-1.30908) = 0.964111
+Software results for sin/cos:
+cos(-1.30908) = 0.258737
+sin(-1.30908) = 0.965948
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-1.04712) = 0.365967
+sin(-1.04712) = -1.36353
+Software results for sin/cos:
+cos(-1.04712) = 0.365918
+sin(-1.04712) = -1.36605
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-0.7854) = 0.000244141
+sin(-0.7854) = 1.41138
+Software results for sin/cos:
+cos(-0.7854) = -3.14978e-006
+sin(-0.7854) = 1.41421
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-0.523682) = -0.499023
+sin(-0.523682) = 0.863525
+Software results for sin/cos:
+cos(-0.523682) = -0.500072
+sin(-0.523682) = 0.865984
+CORDIC core and software results match
+
+CORDIC core results for sin/cos:
+cos(-0.261719) = -0.706055
+sin(-0.261719) = -1.22192
+Software results for sin/cos:
+cos(-0.261719) = -0.707206
+sin(-0.261719) = -1.22469
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0, 1) = 0.000244141
+Software results for atan2:
+atan2(0, 1) = 0
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.100098, 0.899902) = 0.110596
+Software results for atan2:
+atan2(0.100098, 0.899902) = 0.110776
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.199951, 0.800049) = 0.245361
+Software results for atan2:
+atan2(0.199951, 0.800049) = 0.244907
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.300049, 0.699951) = 0.405029
+Software results for atan2:
+atan2(0.300049, 0.699951) = 0.404976
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.399902, 0.600098) = 0.587646
+Software results for atan2:
+atan2(0.399902, 0.600098) = 0.587815
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.5, 0.5) = 0.785889
+Software results for atan2:
+atan2(0.5, 0.5) = 0.785398
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.600098, 0.399902) = 0.983154
+Software results for atan2:
+atan2(0.600098, 0.399902) = 0.982982
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.699951, 0.300049) = 1.16577
+Software results for atan2:
+atan2(0.699951, 0.300049) = 1.16582
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.800049, 0.199951) = 1.32544
+Software results for atan2:
+atan2(0.800049, 0.199951) = 1.32589
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.899902, 0.100098) = 1.46069
+Software results for atan2:
+atan2(0.899902, 0.100098) = 1.46002
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(1, 0) = 1.57056
+Software results for atan2:
+atan2(1, 0) = 1.5708
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0, -1) = 0.000244141
+Software results for atan2:
+atan2(0, -1) = -0
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.100098, -0.899902) = -0.110107
+Software results for atan2:
+atan2(0.100098, -0.899902) = -0.110776
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.199951, -0.800049) = -0.245361
+Software results for atan2:
+atan2(0.199951, -0.800049) = -0.244907
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.300049, -0.699951) = -0.405029
+Software results for atan2:
+atan2(0.300049, -0.699951) = -0.404976
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.399902, -0.600098) = -0.587646
+Software results for atan2:
+atan2(0.399902, -0.600098) = -0.587815
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.5, -0.5) = -0.784912
+Software results for atan2:
+atan2(0.5, -0.5) = -0.785398
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.600098, -0.399902) = -0.983154
+Software results for atan2:
+atan2(0.600098, -0.399902) = -0.982982
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.699951, -0.300049) = -1.16577
+Software results for atan2:
+atan2(0.699951, -0.300049) = -1.16582
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.800049, -0.199951) = -1.32544
+Software results for atan2:
+atan2(0.800049, -0.199951) = -1.32589
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0.899902, -0.100098) = -1.46021
+Software results for atan2:
+atan2(0.899902, -0.100098) = -1.46002
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(1, 0) = 1.57056
+Software results for atan2:
+atan2(1, 0) = 1.5708
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0, 1) = 0.000244141
+Software results for atan2:
+atan2(0, 1) = 0
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.100098, 0.899902) = -0.110107
+Software results for atan2:
+atan2(-0.100098, 0.899902) = -0.110776
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.199951, 0.800049) = -0.245361
+Software results for atan2:
+atan2(-0.199951, 0.800049) = -0.244907
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.300049, 0.699951) = -0.405029
+Software results for atan2:
+atan2(-0.300049, 0.699951) = -0.404976
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.399902, 0.600098) = -0.587646
+Software results for atan2:
+atan2(-0.399902, 0.600098) = -0.587815
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.5, 0.5) = -0.784912
+Software results for atan2:
+atan2(-0.5, 0.5) = -0.785398
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.600098, 0.399902) = -0.983154
+Software results for atan2:
+atan2(-0.600098, 0.399902) = -0.982982
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.699951, 0.300049) = -1.16577
+Software results for atan2:
+atan2(-0.699951, 0.300049) = -1.16582
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.800049, 0.199951) = -1.32544
+Software results for atan2:
+atan2(-0.800049, 0.199951) = -1.32589
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.899902, 0.100098) = -1.46021
+Software results for atan2:
+atan2(-0.899902, 0.100098) = -1.46002
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-1, 0) = -1.57056
+Software results for atan2:
+atan2(-1, 0) = -1.5708
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(0, -1) = 0.000244141
+Software results for atan2:
+atan2(0, -1) = -0
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.100098, -0.899902) = 0.110596
+Software results for atan2:
+atan2(-0.100098, -0.899902) = 0.110776
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.199951, -0.800049) = 0.245361
+Software results for atan2:
+atan2(-0.199951, -0.800049) = 0.244907
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.300049, -0.699951) = 0.405029
+Software results for atan2:
+atan2(-0.300049, -0.699951) = 0.404976
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.399902, -0.600098) = 0.587646
+Software results for atan2:
+atan2(-0.399902, -0.600098) = 0.587815
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.5, -0.5) = 0.785889
+Software results for atan2:
+atan2(-0.5, -0.5) = 0.785398
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.600098, -0.399902) = 0.983154
+Software results for atan2:
+atan2(-0.600098, -0.399902) = 0.982982
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.699951, -0.300049) = 1.16577
+Software results for atan2:
+atan2(-0.699951, -0.300049) = 1.16582
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.800049, -0.199951) = 1.32544
+Software results for atan2:
+atan2(-0.800049, -0.199951) = 1.32589
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-0.899902, -0.100098) = 1.46069
+Software results for atan2:
+atan2(-0.899902, -0.100098) = 1.46002
+CORDIC core and software results match
+
+CORDIC core results for atan2:
+atan2(-1, 0) = -1.57056
+Software results for atan2:
+atan2(-1, 0) = -1.5708
+CORDIC core and software results match
+
+
+All results match.
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
