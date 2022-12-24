@@ -1,0 +1,32 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal input port connection
+     Block: 'Built_in_module/y_gin3'
+Error 0002: Illegal input port connection
+     Block: 'Built_in_module/y_gin4'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Built_in_module/y_gin3'
+
+Details:
+The input ports on this block (Gateway In) must be driven by
+native simulink or non-Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Built_in_module/y_gin4'
+
+Details:
+The input ports on this block (Gateway In) must be driven by
+native simulink or non-Xilinx blocks
+--------------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: ERROR: An error occurred when creating the Vivado project...
+     Block: Unspecified
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  Unspecified
+
+Details:
+ERROR: An error occurred when creating the Vivado project.
+couldn't open "netlist_proj3_builtin_model/untitled.at": no such
+file or directory
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 11 20:46:42 2022...
+... 
+
+For more information please refer to 'C:/ELEC522/jag33/proj3/netlist_proj3_builtin_model/vivado.log'
+
+--------------------------------------------------------------------------------
