@@ -1,0 +1,135 @@
+
+
+================================================================
+== Synthesis Summary Report of 'circular_cordic'
+================================================================
++ General Information: 
+    * Date:           Thu Nov  3 13:54:37 2022
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        lab_four_cordic
+    * Solution:       solution1 (Vitis Kernel Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a12ti-csg325-1L
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |      Modules      | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |    |           |            |     |
+    |      & Loops      | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
+    +-------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |+ circular_cordic  |     -|  0.00|       90|  900.000|         -|       91|     -|        no|     -|   -|  1188 (7%)|  2523 (31%)|    -|
+    | o CORD_LOOP       |     -|  7.30|       18|  180.000|         3|        1|    17|       yes|     -|   -|          -|           -|    -|
+    +-------------------+------+------+---------+---------+----------+---------+------+----------+------+----+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem | 16 -> 16   | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                                         |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                                           |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                                      |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                                      |
+| s_axi_control | angle    | 0x10   | 32    | W      | Data signal of angle             |                                                                                    |
+| s_axi_control | cosine_1 | 0x18   | 32    | W      | Data signal of cosine            |                                                                                    |
+| s_axi_control | cosine_2 | 0x1c   | 32    | W      | Data signal of cosine            |                                                                                    |
+| s_axi_control | sine_1   | 0x24   | 32    | W      | Data signal of sine              |                                                                                    |
+| s_axi_control | sine_2   | 0x28   | 32    | W      | Data signal of sine              |                                                                                    |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------+
+| Argument | Direction | Datatype                             |
++----------+-----------+--------------------------------------+
+| angle    | in        | ap_fixed<16, 3, AP_RND, AP_WRAP, 0>  |
+| cosine   | out       | ap_fixed<16, 1, AP_RND, AP_WRAP, 0>* |
+| sine     | out       | ap_fixed<16, 1, AP_RND, AP_WRAP, 0>* |
++----------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+------------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                            |
++----------+---------------+-----------+----------+------------------------------------+
+| angle    | s_axi_control | register  |          | name=angle offset=0x10 range=32    |
+| cosine   | m_axi_gmem    | interface |          |                                    |
+| cosine   | s_axi_control | register  | offset   | name=cosine_1 offset=0x18 range=32 |
+| cosine   | s_axi_control | register  | offset   | name=cosine_2 offset=0x1c range=32 |
+| sine     | m_axi_gmem    | interface |          |                                    |
+| sine     | s_axi_control | register  | offset   | name=sine_1 offset=0x24 range=32   |
+| sine     | s_axi_control | register  | offset   | name=sine_2 offset=0x28 range=32   |
++----------+---------------+-----------+----------+------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                    | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-------------------------+-----+--------+-------------+-----+--------+---------+
+| + circular_cordic       | 0   |        |             |     |        |         |
+|   add_ln13_fu_206_p2    | -   |        | add_ln13    | add | fabric | 0       |
+|   sub_ln859_fu_239_p2   | -   |        | sub_ln859   | sub | fabric | 0       |
+|   add_ln859_fu_245_p2   | -   |        | add_ln859   | add | fabric | 0       |
+|   add_ln859_1_fu_268_p2 | -   |        | add_ln859_1 | add | fabric | 0       |
+|   sub_ln859_1_fu_274_p2 | -   |        | sub_ln859_1 | sub | fabric | 0       |
+|   add_ln859_2_fu_292_p2 | -   |        | add_ln859_2 | add | fabric | 0       |
+|   sub_ln859_2_fu_298_p2 | -   |        | sub_ln859_2 | sub | fabric | 0       |
++-------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------------+------+------+--------+--------------------+---------+------+---------+
+| Name                   | BRAM | URAM | Pragma | Variable           | Storage | Impl | Latency |
++------------------------+------+------+--------+--------------------+---------+------+---------+
+| + circular_cordic      | 0    | 0    |        |                    |         |      |         |
+|   Cordic_Rotations_V_U | -    | -    |        | Cordic_Rotations_V | rom_1p  | auto | 1       |
++------------------------+------+------+--------+--------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------+---------+------------------------------------------+
+| Type     | Options | Location                                 |
++----------+---------+------------------------------------------+
+| pipeline |         | ../code/cordic.cpp:14 in circular_cordic |
++----------+---------+------------------------------------------+
+
+

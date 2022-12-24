@@ -1,0 +1,1295 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.711 seconds; current allocated memory: 133.531 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.697 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.763 seconds; current allocated memory: 195.227 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.674 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.537 seconds; current allocated memory: 189.094 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.442 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.324 seconds; current allocated memory: 206.594 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.217 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 10.497 seconds; current allocated memory: 202.148 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.392 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.626 seconds; current allocated memory: 200.746 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.533 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.457 seconds; current allocated memory: 211.918 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 11.352 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.181 seconds; current allocated memory: 198.770 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.078 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.466 seconds; current allocated memory: 196.188 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.453 seconds; peak allocated memory: 1.106 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.363 seconds; current allocated memory: 188.938 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.291 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.418 seconds; current allocated memory: 197.148 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.348 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.394 seconds; current allocated memory: 177.234 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.337 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.403 seconds; current allocated memory: 211.762 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.328 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.137 seconds; current allocated memory: 207.383 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.061 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.33 seconds; current allocated memory: 201.094 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.267 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.986 seconds; current allocated memory: 181.688 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.923 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.448 seconds; current allocated memory: 208.391 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.392 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.45 seconds; current allocated memory: 201.484 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.365 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.72 seconds; current allocated memory: 202.004 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.638 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.702 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.21 seconds; peak allocated memory: 1.113 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.547 seconds; current allocated memory: 161.520 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.525 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.845 seconds; current allocated memory: 181.227 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.794 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.853 seconds; current allocated memory: 195.156 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.771 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.787 seconds; current allocated memory: 204.531 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.774 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.891 seconds; current allocated memory: 163.414 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.866 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.129 seconds; current allocated memory: 195.887 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.044 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.956 seconds; current allocated memory: 205.836 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.889 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.879 seconds; current allocated memory: 200.410 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.004 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.958 seconds; current allocated memory: 194.227 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.101 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.921 seconds; current allocated memory: 186.656 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.861 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.567 seconds; current allocated memory: 146.473 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.654 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.635 seconds; current allocated memory: 193.438 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.706 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.922 seconds; current allocated memory: 211.320 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.836 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.64 seconds; current allocated memory: 199.098 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.684 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -clean -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.612 seconds; current allocated memory: 189.363 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.575 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.958 seconds; current allocated memory: 190.957 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.888 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ti-csg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.792 seconds; current allocated memory: 111.301 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.855 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ti-csg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.124 seconds; current allocated memory: 170.168 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.084 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ti-csg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.922 seconds; current allocated memory: 184.512 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.866 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ti-csg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 949.070 MB.
+INFO: [HLS 200-10] Analyzing design file '../code/cordic.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.712 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<64, true>::ssdm_int(long)' into 'ap_int_base<64, true>::ap_int_base(long)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:262:68)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base(int)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1681:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1681:1546)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi55ELb1EEC2EDq55_i' into 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi55ELb1EEC2EDq55_i' into 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi55ELb1EEC2EDq55_i' into 'ap_int_base<55, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base(int)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:941:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:941:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:591:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::quantization_adjust(bool, bool, bool)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:634:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:25:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:26:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:27:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:28:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:29:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:30:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:31:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:32:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:33:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:34:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:35:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:36:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:37:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:38:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:39:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:40:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:183:79)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:591:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::quantization_adjust(bool, bool, bool)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:634:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:183:79)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<(unsigned int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1499:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(unsigned int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1533:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1570:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1572:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi17ELb1EEC2EDq17_i' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:327)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 2, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:387)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:347)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:335)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:325)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 2, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:385)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:345)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:333)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, true>::ssdm_int(short)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi17ELb1EEC2EDq17_i' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:325)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:385)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:345)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:333)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:327)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:387)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:347)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:335)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, true>::ssdm_int(short)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:8:34)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:24:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:25:55)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:25:17)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:24:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:18:11)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:49)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:65)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:18:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:15:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:51)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:65)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:15:27)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:11:31)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:10:33)
+INFO: [HLS 214-178] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:6:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'sine' with compact=none mode in 16-bits (../code/cordic.cpp:6:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'cosine' with compact=none mode in 16-bits (../code/cordic.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.89 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 1.107 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_13_1' (../code/cordic.cpp:11) in function 'circular_cordic' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'circular_cordic' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'circular_cordic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_13_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_13_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.244 seconds; current allocated memory: 1.107 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'circular_cordic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/angle' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/cosine' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/sine' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'circular_cordic' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'angle', 'cosine', 'sine' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'circular_cordic'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.107 GB.
+INFO: [RTMG 210-279] Implementing memory 'circular_cordic_Cordic_Rotations_V_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.445 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.404 seconds; current allocated memory: 1.107 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for circular_cordic.
+INFO: [VLOG 209-307] Generating Verilog RTL for circular_cordic.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 9.4 seconds; current allocated memory: 201.352 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.34 seconds; peak allocated memory: 1.107 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xc7a12ti-csg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 952.039 MB.
+INFO: [HLS 200-10] Analyzing design file '../code/cordic.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.586 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<64, true>::ssdm_int(long)' into 'ap_int_base<64, true>::ap_int_base(long)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:262:68)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi65ELb1EEC2EDq65_i' into 'ap_int_base<65, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base(int)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1681:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1681:1546)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi55ELb1EEC2EDq55_i' into 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi55ELb1EEC2EDq55_i' into 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi55ELb1EEC2EDq55_i' into 'ap_int_base<55, true>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:558)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base(int)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:520)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1542:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:941:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:941:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:591:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::quantization_adjust(bool, bool, bool)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:634:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:25:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:26:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:27:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:28:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:29:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:30:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:31:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:32:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:33:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:34:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:35:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:36:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:37:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:38:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:39:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init' (../code/cordic.h:40:3)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:183:79)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:591:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::quantization_adjust(bool, bool, bool)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:634:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:605:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:598:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:183:79)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<(unsigned int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1499:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(unsigned int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1533:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1570:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1572:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi17ELb1EEC2EDq17_i' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:327)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 2, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:387)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:347)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:335)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:325)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 2, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:385)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:345)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:333)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, true>::ssdm_int(short)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi17ELb1EEC2EDq17_i' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:325)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:385)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:345)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:333)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:327)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<17, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:387)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:347)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1394:335)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<16, true>::ssdm_int(short)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>& ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator=<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:8:34)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 4, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:24:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::minus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:25:55)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 3, true>::plus ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:25:17)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:24:33)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:18:11)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:49)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:65)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:19:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:18:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:15:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::plus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator+<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:51)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:65)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::RType<16, 1, true>::minus ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator-<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator>>(int) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:16:30)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>::operator<<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0>(ap_fixed_base<16, 3, true, (ap_q_mode)0, (ap_o_mode)3, 0> const&) const' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:15:26)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(int)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:11:31)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed(double)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:10:33)
+INFO: [HLS 214-178] Inlining function 'ap_fixed_base<16, 1, true, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base(double)' into 'circular_cordic(ap_fixed<16, 3, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*, ap_fixed<16, 1, (ap_q_mode)0, (ap_o_mode)3, 0>*)' (../code/cordic.cpp:6:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'sine' with compact=none mode in 16-bits (../code/cordic.cpp:6:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'cosine' with compact=none mode in 16-bits (../code/cordic.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.864 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'circular_cordic' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'circular_cordic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'CORD_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'CORD_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.107 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'circular_cordic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/angle' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/cosine' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'circular_cordic/sine' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'circular_cordic' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'angle', 'cosine', 'sine' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'circular_cordic'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 1.107 GB.
+INFO: [RTMG 210-279] Implementing memory 'circular_cordic_Cordic_Rotations_V_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.107 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.405 seconds; current allocated memory: 1.107 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for circular_cordic.
+INFO: [VLOG 209-307] Generating Verilog RTL for circular_cordic.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 9.182 seconds; current allocated memory: 198.500 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.09 seconds; peak allocated memory: 1.107 GB.

@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../code/cordic_test.cpp in debug mode
+   Generating csim.exe
+TB: C:\ELEC522\Cameron\lab_four\vitis_hls\lab_four_cordic\solution1\csim\build\csim.exe	 given: 1 params
+Total Error Amount: 0.000018
+Total Error Count: 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

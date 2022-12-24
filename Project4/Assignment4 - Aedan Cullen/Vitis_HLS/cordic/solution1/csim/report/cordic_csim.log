@@ -1,0 +1,42 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../fpga_hls/cordic.cpp in debug mode
+   Generating csim.exe
+0
+-0.463623
+-0.218628
+-0.0942383
+-0.0318604
+-0.000610352
+0.0150146
+0.00720215
+0.0032959
+0.00134277
+0.000366211
+-0.00012207
+0.00012207
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+1.93945
+1.93896
+0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
