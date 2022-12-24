@@ -1,0 +1,40 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'hl116' on host 'ryn-b10-pc-07' (Windows NT_amd64 version 6.2) on Thu Oct 13 14:36:24 -0500 2022
+INFO: [HLS 200-10] In directory 'C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC'
+Sourcing Tcl script 'C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project treeadd 
+INFO: [HLS 200-10] Opening project 'C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd'.
+INFO: [HLS 200-1510] Running: set_top treeadd 
+INFO: [HLS 200-1510] Running: add_files treeadd.cpp 
+INFO: [HLS 200-10] Adding design file 'treeadd.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb treeadd_test.cpp -cflags -DHW_COSIM 
+INFO: [HLS 200-10] Adding test bench file 'treeadd_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a12ti-csg325-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1
+INFO: [HLS 200-1510] Running: set_part xc7a12ticsg325-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format sysgen -output C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen -output C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 13 14:36:34 2022...
+INFO: [HLS 200-802] Generated output file treeadd/solution1/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.202 seconds; current allocated memory: 190.258 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.158 seconds; peak allocated memory: 1.114 GB.

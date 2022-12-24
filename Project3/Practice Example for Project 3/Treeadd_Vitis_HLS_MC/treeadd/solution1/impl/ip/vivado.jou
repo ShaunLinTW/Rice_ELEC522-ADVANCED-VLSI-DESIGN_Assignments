@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Oct 13 14:36:26 2022
+# Process ID: 1512
+# Current directory: C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1/impl/ip/vivado.log
+# Journal file: C:/ELEC522/hl116/Project3/Treeadd_Vitis_HLS_MC/treeadd/solution1/impl/ip\vivado.jou
+# Running On: RYN-B10-PC-07, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68426 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
