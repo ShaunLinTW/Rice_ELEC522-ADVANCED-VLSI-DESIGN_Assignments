@@ -1,0 +1,652 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub1'
+Error 0002: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub10'
+Error 0003: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub11'
+Error 0004: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub2'
+Error 0005: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub3'
+Error 0006: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub4'
+Error 0007: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub5'
+Error 0008: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub6'
+Error 0009: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub7'
+Error 0010: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub8'
+Error 0011: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/AddSub9'
+Error 0012: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant0'
+Error 0013: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant1 '
+Error 0014: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant10'
+Error 0015: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant11'
+Error 0016: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant2 '
+Error 0017: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant3'
+Error 0018: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant4'
+Error 0019: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant5'
+Error 0020: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant6'
+Error 0021: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant7'
+Error 0022: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant8'
+Error 0023: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Constant9'
+Error 0024: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay1'
+Error 0025: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay10'
+Error 0026: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay2'
+Error 0027: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay3'
+Error 0028: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay4'
+Error 0029: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay5'
+Error 0030: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay6'
+Error 0031: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay7'
+Error 0032: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay8'
+Error 0033: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Delay9'
+Error 0034: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult1'
+Error 0035: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult10'
+Error 0036: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult11'
+Error 0037: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult2'
+Error 0038: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult3'
+Error 0039: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult4'
+Error 0040: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult5'
+Error 0041: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult6'
+Error 0042: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult7'
+Error 0043: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult8'
+Error 0044: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/FIR/Mult9'
+Error 0045: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/Gateway In1'
+Error 0046: Part on the System Generator Token in your design is set ...
+     Block: 'Lab1_4_1/Gateway Out1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub1'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub10'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub11'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub2'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub3'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub4'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub5'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub6'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub7'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub8'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/AddSub9'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant0'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant1 '
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant10'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant11'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant2 '
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant3'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant4'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant5'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant6'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant7'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant8'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Constant9'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay1'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay10'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay2'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay3'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay4'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay5'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay6'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay7'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay8'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Delay9'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult1'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult10'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult11'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult2'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult3'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult4'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult5'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult6'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult7'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult8'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/FIR/Mult9'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/Gateway In1'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab1_4_1/Gateway Out1'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-3fbg676. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------

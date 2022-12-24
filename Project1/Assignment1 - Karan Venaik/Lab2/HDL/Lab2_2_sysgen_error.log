@@ -1,0 +1,120 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Din'
+Error 0002: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Dout'
+Error 0003: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Down Converter/Constant'
+Error 0004: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Down Converter/DDS Compiler 6.0 '
+Error 0005: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Down Converter/Down Sample'
+Error 0006: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Down Converter/Mult'
+Error 0007: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/rst (active low)'
+Error 0008: Part on the System Generator Token in your design is set ...
+     Block: 'Lab2_2/Down Converter/Transpose FIR Filter Black Box/Black Box1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Din'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Dout'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Down Converter/Constant'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Down Converter/DDS Compiler 6.0 '
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Down Converter/Down Sample'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Down Converter/Mult'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/rst (active low)'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'Lab2_2/Down Converter/Transpose FIR Filter Black Box/Black Box1'
+
+Details:
+Part on the System Generator Token in your design is set to
+kintex7 xc7k325t-2ffg900. This part is not found in your Vivado
+installation. Please modify the System Generator Token to a part
+that is currently installed or update Vivado by installing this part.
+--------------------------------------------------------------------------------
