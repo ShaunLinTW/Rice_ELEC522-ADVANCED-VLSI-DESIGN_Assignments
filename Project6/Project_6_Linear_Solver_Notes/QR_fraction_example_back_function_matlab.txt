@@ -1,0 +1,26 @@
+A = [0.1 0.1 0.4 0.3; 0.2 0.8 0.6 0.5 ; 0.9 0.1 0.3 .2; 0.3 0.1 0.4 0.6];
+
+condA = cond(A);
+
+[Q, R] = qr(A);
+
+b = [0.2; 0.1; 0.8; 0.4];
+
+n = 4;
+
+QT = Q';
+
+condQT = cond(QT);
+
+y = QT * b;
+
+x=zeros(n,1);
+
+for j = n:-1:1
+    if (R(j,j)==0) error('Matrix is singular!'); end;
+    x(j)=y(j)/R(j,j);
+    y(1:j-1)=y(1:j-1)-R(1:j-1,j)*x(j);
+end
+
+A * x;
+
