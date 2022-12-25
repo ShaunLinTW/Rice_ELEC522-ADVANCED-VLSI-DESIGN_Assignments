@@ -1,0 +1,45 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'nand' on host 'desktop-susq5l6' (Windows NT_amd64 version 6.2) on Tue Nov 08 13:05:44 -0600 2022
+INFO: [HLS 200-10] In directory 'C:/2022WorkDesktop/ELEC522/Project4/vitis_hls'
+Sourcing Tcl script 'C:/2022WorkDesktop/ELEC522/Project4/vitis_hls/cordic/solution2/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/2022WorkDesktop/ELEC522/Project4/vitis_hls/cordic/solution2/export.tcl
+INFO: [HLS 200-1510] Running: open_project cordic 
+INFO: [HLS 200-10] Opening project 'C:/2022WorkDesktop/ELEC522/Project4/vitis_hls/cordic'.
+INFO: [HLS 200-1510] Running: set_top cordic 
+INFO: [HLS 200-1510] Running: add_files source_files/cordic_fixed.cpp 
+INFO: [HLS 200-10] Adding design file 'source_files/cordic_fixed.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files source_files/cordic.h 
+INFO: [HLS 200-10] Adding design file 'source_files/cordic.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb source_files/cordic-top.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'source_files/cordic-top.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution2 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/2022WorkDesktop/ELEC522/Project4/vitis_hls/cordic/solution2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./cordic/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name cordic cordic 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 2 cordic 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  8 13:05:53 2022...
+INFO: [HLS 200-802] Generated output file cordic/solution2/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.111 seconds; current allocated memory: 399.531 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 8.733 seconds; peak allocated memory: 1.111 GB.
