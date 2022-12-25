@@ -1,0 +1,60 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'fifo_test/ap_rst'
+Error 0002: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'fifo_test/ap_start'
+Error 0003: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'fifo_test/sine_in'
+Error 0004: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'fifo_test/AXI FIFO'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'fifo_test/ap_rst'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'fifo_test/ap_start'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'fifo_test/sine_in'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'fifo_test/AXI FIFO'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------

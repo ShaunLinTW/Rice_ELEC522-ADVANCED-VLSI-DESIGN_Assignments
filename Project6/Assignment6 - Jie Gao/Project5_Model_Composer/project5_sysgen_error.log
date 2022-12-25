@@ -1,0 +1,34 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Error during synthesis of AXI4-Lite interface.
+
+     Block: Unspecified
+Error 0002: AXI4-Lite data widths in excess of 32 are not supported.
+
+     Block: 'project5/Gateway Out4'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  Unspecified
+
+Details:
+Error during synthesis of AXI4-Lite interface.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'project5/Gateway Out4'
+
+Details:
+AXI4-Lite data widths in excess of 32 are not supported.
+
+--------------------------------------------------------------------------------

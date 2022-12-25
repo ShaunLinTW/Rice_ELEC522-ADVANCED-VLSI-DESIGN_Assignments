@@ -1,0 +1,150 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'jg122' on host 'ryn-b10-pc-10' (Windows NT_amd64 version 6.2) on Sun Dec 11 19:15:41 -0600 2022
+INFO: [HLS 200-10] In directory 'C:/ELEC522/jg122/Project5_sinandcos'
+Sourcing Tcl script 'C:/ELEC522/jg122/Project5_sinandcos/sincos/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source C:/ELEC522/jg122/Project5_sinandcos/sincos/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project sincos 
+INFO: [HLS 200-10] Opening project 'C:/ELEC522/jg122/Project5_sinandcos/sincos'.
+INFO: [HLS 200-1510] Running: set_top sin_cos 
+INFO: [HLS 200-1510] Running: add_files cordic.h 
+INFO: [HLS 200-10] Adding design file 'cordic.h' to the project
+INFO: [HLS 200-1510] Running: add_files cordic_fixed.cpp 
+INFO: [HLS 200-10] Adding design file 'cordic_fixed.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb cordic_fixed-top.cpp -cflags -DHW_COSIM -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'cordic_fixed-top.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/ELEC522/jg122/Project5_sinandcos/sincos/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./sincos/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name sin_cos sin_cos 
+INFO: [HLS 200-1510] Running: set_directive_pipeline sin_cos 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../cordic_fixed-top.cpp in debug mode
+   Generating csim.exe
+In file included from C:/Xilinx/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_fpo.h:189,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:98,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_common.h:710,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:55,
+                 from ../../../../cordic.h:4,
+                 from ../../../../cordic_fixed-top.cpp:19:
+C:/Xilinx/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx/Vitis_HLS/2022.1/include/hls_fpo.h:189:0,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:98,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_common.h:710,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_fixed.h:55,
+                 from ../../../../cordic.h:4,
+                 from ../../../../cordic_fixed-top.cpp:19:
+C:/Xilinx/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+theta = 0.000000, x1 = 1.000000, y1 = 0.000000, sin = 0.002930,cos = 0.997070 
+,theta = 0.016602, x1 = 1.000000, y1 = 0.000000, sin = 0.020508,cos = 0.996094 
+,theta = 0.034180, x1 = 1.000000, y1 = 0.000000, sin = 0.034180,cos = 0.996094 
+,theta = 0.051758, x1 = 1.000000, y1 = 0.000000, sin = 0.051758,cos = 0.996094 
+,theta = 0.069336, x1 = 1.000000, y1 = 0.000000, sin = 0.069336,cos = 0.996094 
+,theta = 0.086914, x1 = 1.000000, y1 = 0.000000, sin = 0.085938,cos = 0.992188 
+,theta = 0.104492, x1 = 1.000000, y1 = 0.000000, sin = 0.103516,cos = 0.992188 
+,theta = 0.122070, x1 = 1.000000, y1 = 0.000000, sin = 0.121094,cos = 0.990234 
+,theta = 0.138672, x1 = 1.000000, y1 = 0.000000, sin = 0.134766,cos = 0.990234 
+,theta = 0.156250, x1 = 1.000000, y1 = 0.000000, sin = 0.158203,cos = 0.984375 
+,theta = 0.173828, x1 = 1.000000, y1 = 0.000000, sin = 0.173828,cos = 0.982422 
+,theta = 0.191406, x1 = 1.000000, y1 = 0.000000, sin = 0.189453,cos = 0.980469 
+,theta = 0.208984, x1 = 1.000000, y1 = 0.000000, sin = 0.208008,cos = 0.975586 
+,theta = 0.226562, x1 = 1.000000, y1 = 0.000000, sin = 0.225586,cos = 0.973633 
+,theta = 0.244141, x1 = 1.000000, y1 = 0.000000, sin = 0.243164,cos = 0.969727 
+,theta = 0.261719, x1 = 1.000000, y1 = 0.000000, sin = 0.256836,cos = 0.966797 
+,theta = 0.278320, x1 = 1.000000, y1 = 0.000000, sin = 0.272461,cos = 0.960938 
+,theta = 0.295898, x1 = 1.000000, y1 = 0.000000, sin = 0.293945,cos = 0.955078 
+,theta = 0.313477, x1 = 1.000000, y1 = 0.000000, sin = 0.309570,cos = 0.951172 
+,theta = 0.331055, x1 = 1.000000, y1 = 0.000000, sin = 0.324219,cos = 0.942383 
+,theta = 0.348633, x1 = 1.000000, y1 = 0.000000, sin = 0.339844,cos = 0.938477 
+,theta = 0.366211, x1 = 1.000000, y1 = 0.000000, sin = 0.359375,cos = 0.930664 
+,theta = 0.383789, x1 = 1.000000, y1 = 0.000000, sin = 0.375000,cos = 0.924805 
+,theta = 0.401367, x1 = 1.000000, y1 = 0.000000, sin = 0.390625,cos = 0.918945 
+,theta = 0.417969, x1 = 1.000000, y1 = 0.000000, sin = 0.404297,cos = 0.913086 
+,theta = 0.435547, x1 = 1.000000, y1 = 0.000000, sin = 0.423828,cos = 0.905273 
+,theta = 0.453125, x1 = 1.000000, y1 = 0.000000, sin = 0.437500,cos = 0.896484 
+,theta = 0.470703, x1 = 1.000000, y1 = 0.000000, sin = 0.453125,cos = 0.890625 
+,theta = 0.488281, x1 = 1.000000, y1 = 0.000000, sin = 0.472656,cos = 0.878906 
+,theta = 0.505859, x1 = 1.000000, y1 = 0.000000, sin = 0.486328,cos = 0.870117 
+,theta = 0.523438, x1 = 1.000000, y1 = 0.000000, sin = 0.500000,cos = 0.865234 
+,theta = 0.541016, x1 = 1.000000, y1 = 0.000000, sin = 0.513672,cos = 0.855469 
+,theta = 0.557617, x1 = 1.000000, y1 = 0.000000, sin = 0.529297,cos = 0.845703 
+,theta = 0.575195, x1 = 1.000000, y1 = 0.000000, sin = 0.541016,cos = 0.837891 
+,theta = 0.592773, x1 = 1.000000, y1 = 0.000000, sin = 0.556641,cos = 0.828125 
+,theta = 0.610352, x1 = 1.000000, y1 = 0.000000, sin = 0.572266,cos = 0.818359 
+,theta = 0.627930, x1 = 1.000000, y1 = 0.000000, sin = 0.583984,cos = 0.810547 
+,theta = 0.645508, x1 = 1.000000, y1 = 0.000000, sin = 0.600586,cos = 0.797852 
+,theta = 0.663086, x1 = 1.000000, y1 = 0.000000, sin = 0.612305,cos = 0.788086 
+,theta = 0.680664, x1 = 1.000000, y1 = 0.000000, sin = 0.629883,cos = 0.776367 
+,theta = 0.697266, x1 = 1.000000, y1 = 0.000000, sin = 0.639648,cos = 0.765625 
+,theta = 0.714844, x1 = 1.000000, y1 = 0.000000, sin = 0.655273,cos = 0.753906 
+,theta = 0.732422, x1 = 1.000000, y1 = 0.000000, sin = 0.668945,cos = 0.742188 
+,theta = 0.750000, x1 = 1.000000, y1 = 0.000000, sin = 0.678711,cos = 0.732422 
+,theta = 0.767578, x1 = 1.000000, y1 = 0.000000, sin = 0.695312,cos = 0.717773 
+,theta = 0.785156, x1 = 1.000000, y1 = 0.000000, sin = 0.706055,cos = 0.707031 
+,theta = 0.802734, x1 = 1.000000, y1 = 0.000000, sin = 0.721680,cos = 0.691406 
+,theta = 0.819336, x1 = 1.000000, y1 = 0.000000, sin = 0.732422,cos = 0.678711 
+,theta = 0.836914, x1 = 1.000000, y1 = 0.000000, sin = 0.742188,cos = 0.668945 
+,theta = 0.854492, x1 = 1.000000, y1 = 0.000000, sin = 0.753906,cos = 0.655273 
+,theta = 0.872070, x1 = 1.000000, y1 = 0.000000, sin = 0.765625,cos = 0.639648 
+,theta = 0.889648, x1 = 1.000000, y1 = 0.000000, sin = 0.778320,cos = 0.625977 
+,theta = 0.907227, x1 = 1.000000, y1 = 0.000000, sin = 0.788086,cos = 0.612305 
+,theta = 0.924805, x1 = 1.000000, y1 = 0.000000, sin = 0.797852,cos = 0.600586 
+,theta = 0.942383, x1 = 1.000000, y1 = 0.000000, sin = 0.810547,cos = 0.583984 
+,theta = 0.958984, x1 = 1.000000, y1 = 0.000000, sin = 0.818359,cos = 0.572266 
+,theta = 0.976562, x1 = 1.000000, y1 = 0.000000, sin = 0.828125,cos = 0.556641 
+,theta = 0.994141, x1 = 1.000000, y1 = 0.000000, sin = 0.837891,cos = 0.541016 
+,theta = 1.011719, x1 = 1.000000, y1 = 0.000000, sin = 0.845703,cos = 0.529297 
+,theta = 1.029297, x1 = 1.000000, y1 = 0.000000, sin = 0.855469,cos = 0.513672 
+,theta = 1.046875, x1 = 1.000000, y1 = 0.000000, sin = 0.865234,cos = 0.498047 
+,theta = 1.064453, x1 = 1.000000, y1 = 0.000000, sin = 0.870117,cos = 0.486328 
+,theta = 1.082031, x1 = 1.000000, y1 = 0.000000, sin = 0.882812,cos = 0.466797 
+,theta = 1.098633, x1 = 1.000000, y1 = 0.000000, sin = 0.890625,cos = 0.453125 
+,theta = 1.116211, x1 = 1.000000, y1 = 0.000000, sin = 0.896484,cos = 0.437500 
+,theta = 1.133789, x1 = 1.000000, y1 = 0.000000, sin = 0.905273,cos = 0.423828 
+,theta = 1.151367, x1 = 1.000000, y1 = 0.000000, sin = 0.913086,cos = 0.404297 
+,theta = 1.168945, x1 = 1.000000, y1 = 0.000000, sin = 0.918945,cos = 0.390625 
+,theta = 1.186523, x1 = 1.000000, y1 = 0.000000, sin = 0.924805,cos = 0.375000 
+,theta = 1.204102, x1 = 1.000000, y1 = 0.000000, sin = 0.930664,cos = 0.359375 
+,theta = 1.221680, x1 = 1.000000, y1 = 0.000000, sin = 0.938477,cos = 0.339844 
+,theta = 1.238281, x1 = 1.000000, y1 = 0.000000, sin = 0.942383,cos = 0.324219 
+,theta = 1.255859, x1 = 1.000000, y1 = 0.000000, sin = 0.951172,cos = 0.309570 
+,theta = 1.273438, x1 = 1.000000, y1 = 0.000000, sin = 0.955078,cos = 0.293945 
+,theta = 1.291016, x1 = 1.000000, y1 = 0.000000, sin = 0.960938,cos = 0.272461 
+,theta = 1.308594, x1 = 1.000000, y1 = 0.000000, sin = 0.966797,cos = 0.256836 
+,theta = 1.326172, x1 = 1.000000, y1 = 0.000000, sin = 0.969727,cos = 0.241211 
+,theta = 1.343750, x1 = 1.000000, y1 = 0.000000, sin = 0.973633,cos = 0.225586 
+,theta = 1.361328, x1 = 1.000000, y1 = 0.000000, sin = 0.975586,cos = 0.206055 
+,theta = 1.377930, x1 = 1.000000, y1 = 0.000000, sin = 0.980469,cos = 0.189453 
+,theta = 1.395508, x1 = 1.000000, y1 = 0.000000, sin = 0.982422,cos = 0.173828 
+,theta = 1.413086, x1 = 1.000000, y1 = 0.000000, sin = 0.984375,cos = 0.158203 
+,theta = 1.430664, x1 = 1.000000, y1 = 0.000000, sin = 0.990234,cos = 0.134766 
+,theta = 1.448242, x1 = 1.000000, y1 = 0.000000, sin = 0.990234,cos = 0.121094 
+,theta = 1.465820, x1 = 1.000000, y1 = 0.000000, sin = 0.992188,cos = 0.103516 
+,theta = 1.483398, x1 = 1.000000, y1 = 0.000000, sin = 0.992188,cos = 0.085938 
+,theta = 1.500977, x1 = 1.000000, y1 = 0.000000, sin = 0.996094,cos = 0.069336 
+,theta = 1.517578, x1 = 1.000000, y1 = 0.000000, sin = 0.996094,cos = 0.051758 
+,theta = 1.535156, x1 = 1.000000, y1 = 0.000000, sin = 0.996094,cos = 0.034180 
+,theta = 1.552734, x1 = 1.000000, y1 = 0.000000, sin = 0.996094,cos = 0.020508 
+,INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.19 seconds; current allocated memory: 237.242 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.075 seconds; peak allocated memory: 1.107 GB.

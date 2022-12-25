@@ -1,0 +1,19 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\MATLAB\R2021a
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'rotate_verification_model/Subsystem/Vitis HLS'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'rotate_verification_model/Subsystem/Vitis HLS'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

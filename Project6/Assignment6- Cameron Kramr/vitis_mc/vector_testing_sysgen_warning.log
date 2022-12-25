@@ -1,0 +1,13 @@
+Warning:
+ code:     
+ severity: L1
+ open_fcn:   
+ summary:  The "Simulink system period" setting on this System Generator token is *smaller* than required for the rates used in the design. 
+
+The current setting is:  1/4
+A more efficient setting would be:  1
+ details:  The "Simulink system period" setting on this System Generator token is *smaller* than required for the rates used in the design. 
+
+The current setting is:  1/4
+A more efficient setting would be:  1
+
