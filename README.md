@@ -1,4 +1,4 @@
-# Rice University_ELEC522-ADVANCED-VLSI-DESIGN_Assignments
+# ELEC522-ADVANCED-VLSI-DESIGN_Assignments
 Rice University, Fall 2022 ELEC 522 - ADVANCED VLSI DESIGN Course Assignments
 
 ![Xilinx](https://www.xilinx.com/content/dam/xilinx/imgs/press/media-kits/corporate/xilinx-logo.png)
@@ -11,22 +11,25 @@ Download following software for those project:
 `Xilinx Vitis`
 
 ## Project 1:
-Link for **Project 1**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project1)
+**Project 1- Xilinx Vitis Model Composer / Nvidia CUDA Tutorial Assignment**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project1)
 
 ## Project 2:
-Link for **Project 2**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project2)
+**Project 2- Xilinx FPGA Model Composer Systolic for Matrix Multiplication**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project2)
 
 ## Project 3:
-Link for **Project 3**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project3)
+**Project 3- Using Vitis HLS to Implement Matrix Multiplication**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project3)
 
 ## Project 4:
-Link for **Project 4**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project4)
+**Project 4- Using VitisHLS to implement a CORDIC module on Zynq**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project4)
 
 ## Project 5:
-Link for **Project 5**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project5)
+**Project5- QR Decomposition using CORDIC arithmetic for a 4 x 4 matrix**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project5)
 
 ## Project 6:
-Link for **Project 6**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project6)
+**Project 6- 4 x 4 Linear System Solver with ARM Core and CORDIC QRD and MatrixMultiplication Accelerator Integration**: [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project6)
+
+
+
 
 ## License
 This project is licensed under Rice University
