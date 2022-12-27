@@ -12,7 +12,7 @@ Download following software for those project:
 
 ## Folder Arrangement Explanation:
 
-I didn't organize Project1~2 well, but Project3~6 will be organize as follow:
+I didn't organize Project1-2 well, but Project3-6 will be organize as follow:
 
 In the Project3, we need to complete Matrix Multiplication Vitis HLS, and using Model Composer to compare the results, so here I organize the folder as `Model_Composer` and `Vitis_HLS_code`, you can run the Model Composer part in the folder, but if you want to run the HLS C++ code, you will need to creat a Vitis HLS project, then import the C++ code into it. **Here's the folder location for my Project3** [this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANCED-VLSI-DESIGN_Assignments/tree/main/Project3/project3_v1)
 
