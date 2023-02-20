@@ -1,7 +1,18 @@
 # ELEC522-ADVANCED-VLSI-DESIGN_Assignments
 Rice University, Fall 2022 ELEC 522 - ADVANCED VLSI DESIGN Course Assignments
 
-![Xilinx](https://www.xilinx.com/content/dam/xilinx/imgs/press/media-kits/corporate/xilinx-logo.png)
+<img src="https://www.xilinx.com/content/dam/xilinx/imgs/press/media-kits/corporate/xilinx-logo.png" width="600" height="150" />
+
+# Instructor
+
+<img src="https://profiles.rice.edu/sites/g/files/bxs3881/files/2020-08/Cavallaro.png" width="200" height="200" />
+
+**Professor Joseph R. Cavallaro ([email](cavallar@rice.edu))**
+
+# Student of this repository
+<img src="https://avatars.githubusercontent.com/u/20944449?v=4" width="200" height="200" />
+
+**Shaun Lin ([email](hl116@rice.edu))**
 
 ## Getting Started
 Download following software for those project:
@@ -64,4 +75,4 @@ Project Goals:[this repository](https://github.com/PiscesLin/Rice_ELEC522-ADVANC
 ## License
 This project is licensed under Rice University
 
-![Rice_University](https://brand.rice.edu/sites/g/files/bxs2591/files/2019-08/190308_Rice_Mechanical_Brand_Standards_Logos-9.png)
+<img src="https://brand.rice.edu/sites/g/files/bxs2591/files/2019-08/190308_Rice_Mechanical_Brand_Standards_Logos-9.png" width="500" height="100" />
